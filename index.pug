@@ -2,10 +2,12 @@
 html(lang="en")
 head
 	meta(charset="UTF-8")
-	title Document
+	title test
 body
 	section.main 
 		include components/text_field/text_field.pug
+		+focus()
+		+focus('text_field__input_focus')
 
 
 	
