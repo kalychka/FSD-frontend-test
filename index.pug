@@ -5,11 +5,11 @@ head
 	title test
 body
 	section.main
-		div.main__left
+		div.main__container
 			include components/text_field/text_field.pug
-			+focus('', 'default')
-			+focus('text_field__input_focus', 'hover / focus')
-
+			+focus('', 'default', 'Email')
+			+focus('text_field__input_focus', 'hover / focus', 'This is pretty awesome')
+			include components/dropdown/dropdown.pug
 
 
 	
