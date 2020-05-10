@@ -1,7 +1,7 @@
-mixin focus(mod, title)
+mixin focus(mod, title, placeholder)
     
     div.text-field 
         p.text-field__title text field 
         p.text-field__title= title
         form(action="#").text_field__form
-            input(type="text" placeholder="Email" class="text_field__input" + " " + mod)
+            input(type="text" placeholder=placeholder class="text_field__input" + " " + mod)
