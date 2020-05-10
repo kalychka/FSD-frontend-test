@@ -5,7 +5,7 @@ head
 	title test
 body
 	section.main
-		div.main__container
+		div.main__container.clearfix
 			include components/text_field/text_field.pug
 			+focus('', 'default', 'Email')
 			+focus('text_field__input_focus', 'hover / focus', 'This is pretty awesome')
