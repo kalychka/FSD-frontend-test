@@ -1,0 +1,12 @@
+mixin date-dropdown(title, date)
+    div.date-dropdown 
+        p=title
+        form(action="#").date-dropdown__form
+            input(type="text" id="datepicker" placeholder="ДД.ММ.ГГГГ")
+            script
+                $( function() {
+                    $( "#datepicker" ).datepicker({
+                        defaultDate: date
+                    });
+                } );
+            
