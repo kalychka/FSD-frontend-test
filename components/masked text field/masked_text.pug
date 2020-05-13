@@ -1,0 +1,6 @@
+mixin masked(title)
+    div.masked-text
+        p=title
+        p Default
+        form(action="#").masked-text__form
+            input(type="text" id="date" placeholder="ДД.ММ.ГГГГ" spellcheck="false")
