@@ -1,5 +1,5 @@
 $( function() {
-    $( "#datepicker" ).datepicker({
+    $( "#datepicker_default" ).datepicker({
         defaultDate: "+1d",
         buttonImageOnly: true,
         showOn: "both",
