@@ -1,6 +1,7 @@
 require('../node_modules/jquery-ui-dist/jquery-ui.js')
 require('../node_modules/jquery-ui-dist/jquery-ui.css')
 require('./plugins/jquery.maskedinput.min.js')
+require('./plugins/jquery.datepicker.extension.range.min.js')
 
 import './index.pug'
 import './styles/style.scss'

@@ -1,2 +1,5 @@
-div.filter-dropdown 
-    p=title
+mixin filter-dropdown(title)
+    div.filter-dropdown 
+        p=title
+        form.filter-dropdown__form
+            input(id="filter-dropdown" readonly)
