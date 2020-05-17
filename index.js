@@ -22,5 +22,6 @@ import './components/date dropdown/date_dropdown_default.js'
 import './components/filter-date/filter-dropdown.scss'
 import './components/filter-date/filter-dropdown.js'
 
+import './components/subscriptions-text-field/subscriptions-text-field.scss'
 
 
