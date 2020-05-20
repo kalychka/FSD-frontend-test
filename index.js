@@ -24,4 +24,6 @@ import './components/filter-date/filter-dropdown.js'
 
 import './components/subscriptions-text-field/subscriptions-text-field.scss'
 
+import './components/checkbox-buttons/checkbox-buttons.scss'
+
 
