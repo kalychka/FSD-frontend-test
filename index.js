@@ -26,4 +26,6 @@ import './components/subscriptions-text-field/subscriptions-text-field.scss'
 
 import './components/checkbox-buttons/checkbox-buttons.scss'
 
+import './components/radio-buttons/radio-buttons.scss'
+
 

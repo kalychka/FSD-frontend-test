@@ -1,0 +1,12 @@
+mixin radio-buttons(title)
+    div.radio-button
+        p=title
+        form(action="#")
+            label(for="male")
+                input(type="radio" id="male" name="sex")
+                span.radio-button__radio
+                | Мужчина
+            label(for="female")
+                input(type="radio" id="female" name="sex")
+                span.radio-button__radio
+                | Женщина
