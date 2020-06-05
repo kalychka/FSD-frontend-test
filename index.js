@@ -28,4 +28,6 @@ import './components/checkbox-buttons/checkbox-buttons.scss'
 
 import './components/radio-buttons/radio-buttons.scss'
 
+import './components/toggle/toggle.scss'
+
 
