@@ -30,4 +30,8 @@ import './components/radio-buttons/radio-buttons.scss'
 
 import './components/toggle/toggle.scss'
 
+import './components/like-button/like-button.js'
+import './components/like-button/like-button.scss'
+
+
 

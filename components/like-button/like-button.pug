@@ -1,0 +1,7 @@
+mixin like-button(title)
+    div.like-button 
+        p=title
+        label(for="#").like-button__label
+            span favorite_border
+            a(href="#").btn-counter
+                | 0
