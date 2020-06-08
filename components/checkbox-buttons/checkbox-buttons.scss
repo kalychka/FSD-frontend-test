@@ -1,40 +1,32 @@
-.checkbox-buttons {
-    p {
-        font-size: 0.75rem;
-        line-height: 15px;
-        text-transform: uppercase;
-        color: #1F2041;
-        font-weight: 900;
-    }
-    .checkbox-buttons__list {
-        list-style-type: none;
-        padding-left: 0;
-        li {
-            margin-bottom: 13px;
-            display: flex;
-            align-items: center;
-            label {
-                font-size: 0.875rem;
-                line-height: 18px;
-                color: rgba(31, 32, 65, 0.5);
-                padding-left: 2em;
-                input {
-                    appearance: none;
-                    position: absolute;
-                }
-            }
-
-            .checkbox-buttons__list__item {
+.checkbox-buttons__list {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+    li {
+        margin-bottom: 13px;
+        display: flex;
+        align-items: center;
+        label {
+            font-size: 0.875rem;
+            line-height: 18px;
+            color: rgba(31, 32, 65, 0.5);
+            padding-left: 2em;
+            input {
+                appearance: none;
                 position: absolute;
-                width: 1.25rem;
-                height: 1.25rem;
-                background-image: url(../../assets/checkbox.png);
-                margin-left: -2em;
             }
+        }
 
-            input:checked + .checkbox-buttons__list__item {
-                background-image: url(../../assets/checkbox-checked.png);
-            }
+        .checkbox-buttons__list__item {
+            position: absolute;
+            width: 1.25rem;
+            height: 1.25rem;
+            background-image: url(../../assets/checkbox.png);
+            margin-left: -2em;
+        }
+
+        input:checked + .checkbox-buttons__list__item {
+            background-image: url(../../assets/checkbox-checked.png);
         }
     }
 }

@@ -1,21 +1,17 @@
-mixin checkbox-buttons(title)
-    div.checkbox-buttons 
-        p=title
-        ul.checkbox-buttons__list
-            li 
-                label(for="smoking") 
-                    input(type="checkbox" id="smoking")
-                    span.checkbox-buttons__list__item
-                    | Можно курить
-                
-            li 
-                label(for="animal") 
-                    input(type="checkbox" id="animal")
-                    span.checkbox-buttons__list__item 
-                    | Можно с питомцами
-            li 
-                label(for="ivent")
-                    input(type="checkbox" id="ivent")
-                    span.checkbox-buttons__list__item
-                    | Можно пригласить гостей <br> (до 10 человек)
-                
+ul.checkbox-buttons__list
+    li 
+        label(for="smoking") 
+            input(type="checkbox" id="smoking")
+            span.checkbox-buttons__list__item
+            | Можно курить
+        
+    li 
+        label(for="animal") 
+            input(type="checkbox" id="animal")
+            span.checkbox-buttons__list__item 
+            | Можно с питомцами
+    li 
+        label(for="ivent")
+            input(type="checkbox" id="ivent")
+            span.checkbox-buttons__list__item
+            | Можно пригласить гостей <br> (до 10 человек)
