@@ -1,12 +1,4 @@
-mixin like-button(title)
-    div.like-button 
-        p=title
-        div.like-button__container
-            label(id="like-one").like-button__label
-                span favorite_border
-                a(id="like-one__counter").btn-counter
-                    | 0
-            label(id="like-two").like-button__label
-                span favorite_border
-                a(id="like-two__counter").btn-counter
-                    | 0
+label(id="like").like-button__label
+    span favorite_border
+    a(id="like__counter").btn-counter
+        | 0

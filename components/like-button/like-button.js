@@ -1,17 +1,17 @@
 $(function() {
     var like = 0;
-    $("#like-one").click(function() {
+    $("#like").click(function() {
         like += 1;
-        $('#like-one__counter').text(like);
+        $('#like__counter').text(like);
     })
 })
 
 $(function() {
     var like = 0;
-    $("#like-two").click(function() {
+    $("#like-active").click(function() {
         like += 1;
-        $('#like-two__counter').text(like);
-        $("#like-two span").text("favorite");
-        $("#like-two").addClass("like-button__label_active")
+        $('#like-active__counter').text(like);
+        $("#like-active span").text("favorite");
+        $("#like-active").addClass("like-button__label_active")
     })
 })
