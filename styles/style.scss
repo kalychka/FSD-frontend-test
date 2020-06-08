@@ -14,7 +14,7 @@ body {
     .main__container {
         display: flex;
         flex-direction: column;
-        justify-content: start;
+        justify-content: space-around;
         .main__container__item {
             display: flex;
             flex-direction: column;
