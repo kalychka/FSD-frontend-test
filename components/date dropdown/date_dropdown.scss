@@ -1,34 +1,23 @@
-.date-dropdown {
-    float: left;
-    margin-right: 20px;
-    p {
-        font-size: 0.75rem;
-        text-transform: uppercase;
-        font-weight: 900;
-        line-height: 15px;
-        color: #1F2041;
-    }
-    .date-dropdown__form {
+.date-dropdown__form {
+    box-sizing: border-box;
+    width: 150px;
+    height: 44px;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    padding-top: 8px;
+    border-radius: 4px;
+    input {
+        border: none;
+        width: 103px;
+        height: 24px;
+        float: left;
+        outline: none;
         box-sizing: border-box;
-        width: 150px;
-        height: 44px;
-        border: 1px solid rgba(31, 32, 65, 0.25);
-        padding-top: 8px;
-        border-radius: 4px;
-        input {
-            border: none;
-            width: 103px;
-            height: 24px;
-            float: left;
-            outline: none;
-            box-sizing: border-box;
-            padding-left: 15px;
-            line-height: 18px;
-        }
-        img {
-            content: url(../../assets/expand_more.png);
-            float: right;
-            padding: 10px;
-        }
+        padding-left: 15px;
+        line-height: 18px;
+    }
+    img {
+        content: url(../../assets/expand_more.png);
+        float: right;
+        padding: 10px;
     }
 }

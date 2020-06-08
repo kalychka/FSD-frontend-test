@@ -12,11 +12,17 @@ body
 			include components/dropdown/dropdown.pug
 			include components/masked text field/masked_text.pug 
 			+masked('Masked Text Field')
-			include components/date dropdown/date_dropdown.pug 
-			+date-dropdown('Date Dropdown', '')
-			+date-dropdown('Date Dropdown', '_default')
-			include components/filter-date/filter-dropdown.pug
-			+filter-dropdown('Filter Date Dropdown')
+			div.main__container__item 
+				p Date Dropdown
+				div.component-container
+					include components/date dropdown/date_dropdown.pug 
+					+date-dropdown('_1')
+					+date-dropdown('_2')
+			div.main__container__item 
+				p Filter Date Dropdown
+				div.component-container
+					include components/filter-date/filter-dropdown.pug
+			
 			div.main__container__item 
 				p Subscriptions Text Field
 				div.component-container

@@ -1,7 +1,5 @@
-mixin date-dropdown(title, mod)
-    div.date-dropdown 
-        p=title
-        form(action="#").date-dropdown__form
-            input(type="text" id="datepicker" + mod placeholder="ДД.ММ.ГГГГ")
+mixin date-dropdown(number)
+    form(action="#").date-dropdown__form
+        input(type="text" id="datepicker" + number placeholder="ДД.ММ.ГГГГ")
             
             
