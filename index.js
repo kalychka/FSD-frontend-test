@@ -33,5 +33,8 @@ import './components/toggle/toggle.scss'
 import './components/like-button/like-button.js'
 import './components/like-button/like-button.scss'
 
+import './components/rate-buttons/rate-buttons.scss'
+import './components/rate-buttons/rate-buttons.js'
+
 
 

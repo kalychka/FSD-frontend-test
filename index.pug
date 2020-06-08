@@ -28,5 +28,11 @@ body
 			+toggle('Toggle')
 			include components/like-button/like-button.pug 
 			+like-button('Like Button')
+			div.main__container__item
+				p Rate Button
+				div.component-container
+					include components/rate-buttons/rate-buttons.pug 
+					+rate-buttons('rate-one')
+					+rate-buttons('rate-two')
 
 	
