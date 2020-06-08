@@ -1,35 +1,18 @@
-.masked-text {
-    float: left;
-    p {
-        text-transform: uppercase;
-        font-size: 0.75rem;
-        line-height: 15px;
-        color: #1F2041;
-        &:nth-child(1) {
-            float: left;
-            font-weight: 900;
+.masked-text__form {
+    input {
+        width: 320px;
+        height: 44px;
+        box-sizing: border-box;
+        padding: 0 0 0 15px;
+        border: 1px solid rgba(31, 32, 65, 0.25);
+        border-radius: 4px;
+        outline: none;
+        &::-webkit-input-placeholder, &::-moz-placeholder,
+        &:focus::-webkit-input-placeholder {
+            font-size: 0.875rem;
+            color: rgba(31, 32, 65, 0.25);
+            line-height: 24px;
         }
-        &:nth-child(2) {
-            float: right;
-            font-weight: 100;
-        }      
     }
-    .masked-text__form {
-        input {
-            width: 320px;
-            height: 44px;
-            box-sizing: border-box;
-            padding: 0 0 0 15px;
-            border: 1px solid rgba(31, 32, 65, 0.25);
-            border-radius: 4px;
-            outline: none;
-            &::-webkit-input-placeholder, &::-moz-placeholder,
-            &:focus::-webkit-input-placeholder {
-                font-size: 0.875rem;
-                color: rgba(31, 32, 65, 0.25);
-                line-height: 24px;
-            }
-        }
 
-    }
 }

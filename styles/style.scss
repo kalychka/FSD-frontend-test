@@ -25,6 +25,17 @@ body {
                 text-transform: uppercase;
                 color: #1F2041;
             }
+            .component-title {
+                p {
+                    &:nth-child(1) {
+                        float: left;
+                    }
+                    &:nth-child(2) {
+                        float: right;
+                        font-weight: 100;
+                    }      
+                }
+            }
             .component-container {
                 display: flex;        
             }
@@ -34,6 +45,10 @@ body {
         }
     }
 }
+
+/* masked text-field */
+
+
 
 /* date-dropdown */
 
