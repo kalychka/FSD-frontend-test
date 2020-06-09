@@ -13,7 +13,6 @@ body
 				div.component-container 
 					include components/text_field/text_field.pug
 					+focus(' ')
-
 			div.main__container__item 
 				div.component-title 
 					p Text Field
@@ -21,22 +20,18 @@ body
 				div.component-container
 					include components/text_field/text_field.pug 
 					+focus('text_field__input_focus')
-							
-
 			div.main__container__item 
 				div.component-title 
 					p Dropdown
 					p Default
 				div.component-container 
 					include components/dropdown/dropdown.pug
-
 			div.main__container__item 
 				div.component-title
 					p Masked Text Field
 					p Default
 				div.component-container 
-					include components/masked text field/masked_text.pug 
-			
+					include components/masked text field/masked_text.pug
 			div.main__container__item 
 				p Date Dropdown
 				div.component-container
@@ -47,41 +42,42 @@ body
 				p Filter Date Dropdown
 				div.component-container
 					include components/filter-date/filter-dropdown.pug
-			
 			div.main__container__item 
 				p Subscriptions Text Field
 				div.component-container
 					include components/subscriptions-text-field/subscriptions-text-field.pug
-			
 		div.main__container
 			div.main__container__item 
 				p CheckBox Buttons
 				div.component-container
 					include components/checkbox-buttons/checkbox-buttons.pug
-	
 			div.main__container__item
 				p Radio Buttons
 				div.component-container
-					include components/radio-buttons/radio-buttons.pug 
-			
+					include components/radio-buttons/radio-buttons.pug
 			div.main__container__item 
 				p Toggle
 				div.component-container.main__container__item_column 
 					include components/toggle/toggle.pug 
-					include components/toggle/toggle.pug 
-					
+					include components/toggle/toggle.pug		
 			div.main__container__item
 				p Like Button 
 				div.component-container
 					include components/like-button/like-button.pug 
-					include components/like-button/like-button__active.pug 
-	
+					include components/like-button/like-button__active.pug
 			div.main__container__item
 				p Rate Button
 				div.component-container
 					include components/rate-buttons/rate-buttons.pug 
 					+rate('rate-one')
 					+rate('rate-two')
+		div.main__container 
+			div.main__container__item
+				div.component-title
+					p Range slider
+					input(type="text" id="amount" readonly)
+				div.component-container 
+					include components/slider-range/slider-range.pug
 					
 					
 

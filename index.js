@@ -35,5 +35,8 @@ import './components/like-button/like-button.scss'
 import './components/rate-buttons/rate-buttons.scss'
 import './components/rate-buttons/rate-buttons.js'
 
+import './components/slider-range/slider-range.scss'
+import './components/slider-range/slider-range.js'
+
 
 

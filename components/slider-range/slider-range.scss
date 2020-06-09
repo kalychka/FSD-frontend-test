@@ -1,0 +1,21 @@
+.ui-slider {
+    width: 266px;
+    height: 6px;
+    border: 1px solid rgba(31, 32, 65, 0.25) !important;
+    border-radius: 3px;
+}
+
+.ui-slider-range {
+    background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+}
+
+.ui-slider-handle {
+    width: 12px !important;
+    height: 12px !important;
+    background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%) !important;
+    border: 2px solid #FFFFFF !important;
+    border-radius: 50%;
+    outline: none;
+    
+}
+
