@@ -1,0 +1,21 @@
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 99px;
+    height: 44px;
+    border-radius: 22px;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    a {
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        line-height: 15px;
+        color: #fff;
+        text-decoration: none;
+    }
+}
+
+.button_hover:hover {
+    opacity: 0.5;
+}

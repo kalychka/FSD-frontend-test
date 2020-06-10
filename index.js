@@ -38,5 +38,9 @@ import './components/rate-buttons/rate-buttons.js'
 import './components/slider-range/slider-range.scss'
 import './components/slider-range/slider-range.js'
 
+import './components/buttons/button.scss'
+import './components/buttons/button-outline.scss'
+import './components/buttons/icon-link.scss'
+import './components/buttons/button-pay.scss'
 
 

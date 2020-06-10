@@ -14,10 +14,11 @@ body {
     .main__container {
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: flex-start;
         .main__container__item {
             display: flex;
             flex-direction: column;
+            
             P {
                 font-size: 0.75rem;
                 font-weight: bold;
@@ -50,10 +51,6 @@ body {
     }
 }
 
-/* masked text-field */
-
-
-
 /* date-dropdown */
 
 .component-container .date-dropdown__form:first-child {
@@ -65,5 +62,26 @@ body {
 #rate-one {
     margin-right: 20px;
 }
+
+/* button */
+
+.button {
+    margin-right: 19px;
+}
+
+/* button-outline */ 
+
+.button-outline {
+    margin-right: 20px;
+}
+
+/* icon-link */ 
+
+.icon-link {
+    margin-right: 20px;
+}
+
+
+
 
 
