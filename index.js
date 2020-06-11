@@ -3,8 +3,11 @@ require('../node_modules/jquery-ui-dist/jquery-ui.css')
 require('./plugins/jquery.maskedinput.min.js')
 require('./plugins/jquery.datepicker.extension.range.min.js')
 
+
 import './index.pug'
 import './styles/style.scss'
+
+import logo from './assets/logo.png'
 
 import './components/text_field/text_field.scss'
 
@@ -42,5 +45,8 @@ import './components/buttons/button.scss'
 import './components/buttons/button-outline.scss'
 import './components/buttons/icon-link.scss'
 import './components/buttons/button-pay.scss'
+
+import './components/pagination/pagination.scss'
+
 
 
