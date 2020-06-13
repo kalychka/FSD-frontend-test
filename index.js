@@ -4,7 +4,7 @@ require('./plugins/jquery.maskedinput.min.js')
 require('./plugins/jquery.datepicker.extension.range.min.js')
 
 
-import './index.pug'
+import './pages/index.pug'
 import './styles/style.scss'
 
 import logo from './assets/logo.png'

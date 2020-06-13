@@ -4,6 +4,7 @@
 body {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
+    
 };
 
 .main {
@@ -18,14 +19,7 @@ body {
         .main__container__item {
             display: flex;
             flex-direction: column;
-            
-            P {
-                font-size: 0.75rem;
-                font-weight: bold;
-                line-height: 15px;
-                text-transform: uppercase;
-                color: #1F2041;
-            }
+    
             .component-title {
                 display: flex;
                 align-items: center;
@@ -38,6 +32,13 @@ body {
                     line-height: 15px;
                     text-transform: uppercase;
                     color: rgba(31, 32, 65, 0.5);
+                }
+                P {
+                    font-size: 0.75rem;
+                    font-weight: bold;
+                    line-height: 15px;
+                    text-transform: uppercase;
+                    color: #1F2041;
                 }
                
             }
