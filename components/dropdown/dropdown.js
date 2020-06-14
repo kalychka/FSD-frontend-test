@@ -1,5 +1,6 @@
 $( function() {
     $('.dropdown__list').hide();
+    $('.dropdown__complete-button__clear').hide();
     $('#dropdown-one').children('.dropdown__form').click(function() {
         $('#dropdown-one').children('.dropdown__list').slideToggle();
 
@@ -62,12 +63,23 @@ $( function() {
         });
 
     });
-    $('#dropdown-one').find('.dropdown__complete-button p').click(function() {
+    $('#dropdown-one').find('.dropdown__complete-button__done').click(function() {
 
         var score = parseInt( $('#dropdown-one #dropdown-adult').find('input').val() ) + 
                     parseInt( $('#dropdown-one #dropdown-child').find('input').val() ) + 
                     parseInt( $('#dropdown-one #dropdown-baby').find('input').val() );
+        if (score > 0) {
+            console.log('check');
+            $('.dropdown__complete-button__clear').show();
+            $('.dropdown__complete-button').css({'justify-content' : 'space-between'});
+        }
         $('#dropdown-one').find('.dropdown__form_placeholder').text(`${score} Гостя`);
+        $('#dropdown-one').children('.dropdown__list').slideToggle();
+    })
+
+    $('.dropdown__complete-button__clear').click(function() {
+        $('#dropdown-one #dropdown-adult, #dropdown-one #dropdown-child, #dropdown-one #dropdown-baby').find('input').val(0);
+        $('#dropdown-one').find('.dropdown__form_placeholder').text('Сколько гостей');
         $('#dropdown-one').children('.dropdown__list').slideToggle();
     })
 })

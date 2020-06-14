@@ -88,8 +88,13 @@
                 }
             }
         }
+        .dropdown__complete-button {
+            display: flex;
+            justify-content: flex-end;
+        }
+
         .dropdown__complete-button p {
-            text-align: right;
+            display: inline-block;
             font-size: 0.75rem;
             line-height: 0.9375rem;
             font-weight: bold;
