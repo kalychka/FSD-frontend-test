@@ -26,7 +26,7 @@ body
 					p Default
 				div.component-container 
 					include ../components/dropdown/dropdown.pug
-					+Dropdown('Сколько гостей', 'dropdown-one')
+					+Dropdown('Сколько гостей', 'dropdown')
 					
 			div.main__container__item 
 				div.component-title
@@ -115,7 +115,10 @@ body
 			div.main__container__item 
 				div.component-title 
 					p Dropdown
-					p Default				
+					p Default	
+				div.component-container 
+					+Dropdown('Сколько гостей', 'dropdown')
+
 					
 					
 					
