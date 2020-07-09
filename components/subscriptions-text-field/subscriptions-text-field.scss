@@ -1,12 +1,14 @@
 .subscriptions__form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
     width: 267px;
     height: 44px;
     box-sizing: border-box;
-    padding-left: 15px;
     border: 1px solid rgba(31, 32, 65, 0.25);
     border-radius: 4px;
-    padding-top: 8px;
     input {
+        width: 75%;
         border: none;
         outline: none;
         font-size: 0.875rem;
@@ -14,11 +16,15 @@
         color: rgba(31, 32, 65, 0.25);
     }
 
-    img {
-        content: url(../../assets/arrow_forward.png);
-        padding-right: 15px;
-        padding-top: 4px;
+    span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        font-family: 'Material Icons';
+        font-size: 1.5rem;
+        color: #BC9CFF;
         cursor: pointer;
-        float: right;
     }
 }
