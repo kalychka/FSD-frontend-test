@@ -8,7 +8,8 @@
     line-height: 24px;
     color: rgba(31, 32, 65, 0.75);
     input {
-        appearance: none;
+        -moz-appearance: none;
+        -webkit-appearance: none;
         position: absolute;
     }
     .radio-button__radio {
