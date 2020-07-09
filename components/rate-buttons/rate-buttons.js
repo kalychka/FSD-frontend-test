@@ -1,13 +1,10 @@
-$("#rate-one li").click(function(){  
-    var select = $('#rate-one li').index(this);  
+$("#rate-buttons .rate-buttons-list__item").click(function(){  
+
+    var select = $(this).index(); 
+    console.log(select)
     for (i = 0; i <= select; i++) {
-        $('#rate-one li span').eq(i).text('star');
+        $(this).parent().find('.rate-buttons-list__item span').eq(i).text('star');
     };
+
 })
 
-$("#rate-two li").click(function(){  
-    var select = $('#rate-two li').index(this);  
-    for (i = 0; i <= select; i++) {
-        $('#rate-two li span').eq(i).text('star');
-    };
-})
