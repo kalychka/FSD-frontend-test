@@ -4,7 +4,7 @@
 body {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
-    
+    background-color: #E5E5E5;
 };
 
 .main {
@@ -68,6 +68,11 @@ body {
 
 .ui-slider {
     margin-bottom: 43px;
+}
+
+#amount {
+    background-color: #E5E5E5;
+    width: 102px;
 }
 
 /* button */
