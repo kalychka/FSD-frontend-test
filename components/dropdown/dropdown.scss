@@ -1,6 +1,6 @@
 .dropdown {
     border: 1px solid rgba(31, 32, 65, 0.25);
-    border-radius: 4px;
+    border-radius: 2px;
     .dropdown__form {
         display: flex;
         justify-content: space-between;
@@ -101,6 +101,15 @@
             color: #BC9CFF;
             cursor: pointer;
         }
+    }
+}
+
+#dropdown-bedroom {
+    .dropdown__form, .dropdown__list {
+        width: 266px;
+    }
+    .dropdown__complete-button {
+        display: none;
     }
 }
 

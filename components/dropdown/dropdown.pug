@@ -1,4 +1,4 @@
-mixin Dropdown(placeholder, id)
+mixin Dropdown(placeholder, id, title1, title2, title3)
     div(id=id).dropdown
         div.dropdown__form       
             p.dropdown__form_placeholder=placeholder
@@ -6,7 +6,7 @@ mixin Dropdown(placeholder, id)
         ul.dropdown__list  
             li(id="dropdown-adult").dropdown__list__item
                 div.dropdown__list__item__title
-                    p Взрослые
+                    p=title1
                 div.dropdown__list__item__button
                     div.dropdown-button.dropdown-button_disable
                         span.minus -
@@ -15,7 +15,7 @@ mixin Dropdown(placeholder, id)
                         span.plus +
             li(id="dropdown-child").dropdown__list__item
                 div.dropdown__list__item__title
-                    p Дети
+                    p=title2
                 div.dropdown__list__item__button
                     div.dropdown-button.dropdown-button_disable
                         span.minus -
@@ -24,7 +24,7 @@ mixin Dropdown(placeholder, id)
                         span.plus +
             li(id="dropdown-baby").dropdown__list__item
                 div.dropdown__list__item__title
-                    p Младенцы
+                    p=title3
                 div.dropdown__list__item__button
                     div.dropdown-button.dropdown-button_disable
                         span.minus -

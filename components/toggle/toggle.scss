@@ -11,6 +11,7 @@
         opacity: 0;
         width: 0;
         height: 0;
+        position: absolute;
         &:checked + .slider::before {
             transform: translateX(20px);
             background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);

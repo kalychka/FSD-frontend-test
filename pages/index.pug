@@ -26,7 +26,7 @@ body
 					p Default
 				div.component-container 
 					include ../components/dropdown/dropdown.pug
-					+Dropdown('Сколько гостей', 'dropdown')
+					+Dropdown('Сколько гостей', 'dropdown', 'Взрослые', 'Дети', 'Младенцы')
 					
 			div.main__container__item 
 				div.component-title
@@ -116,8 +116,13 @@ body
 					p Dropdown
 					p Default	
 				div.component-container 
-					+Dropdown('Сколько гостей', 'dropdown')
-
+					+Dropdown('Сколько кроватей', 'dropdown-bedroom', 'Спальни', 'Кровати', 'Ванные комнаты')
+			div.main__container__item 
+				div.component-title 
+					p Dropdown
+					p Default	
+				div.component-container 
+					+Dropdown('Сколько кроватей', 'dropdown-bedroom', 'Спальни', 'Кровати', 'Ванные комнаты')
 					
 					
 					
