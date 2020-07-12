@@ -34,6 +34,9 @@
             label {
                 display: flex;
                 align-items: center;
+                font-size: 0.875rem;
+                line-height: 18px;
+                color: rgba(31, 32, 65, 0.5);
                 input {
                     -moz-appearance: none;
                     -webkit-appearance: none;
@@ -47,7 +50,7 @@
                 span {
                     position: absolute;
                     width: 1.25rem;
-                    height: 1.25rem;
+                    height: 1.3rem;
                     background-image: url(../../assets/checkbox.png);
                     margin-left: -2em;
                 }
@@ -55,4 +58,8 @@
             }
         }
     }
+}
+
+.expandable-checkbox__transform {
+    transform: rotate(-180deg);
 }

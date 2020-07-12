@@ -1,0 +1,38 @@
+.rich-checkbox {
+    margin: 0 0 0 35px;
+    padding: 0;
+    list-style-type: none;
+    .rich-checkbox__item {
+        margin-bottom: 10px;
+        label {
+            font-size: 0.875rem;
+            line-height: 18px;
+            font-weight: bold;
+            color: rgba(31, 32, 65, 0.75);
+            input {
+                -moz-appearance: none;
+                -webkit-appearance: none;
+                position: absolute;
+            }
+
+            input:checked + span {
+                background-image: url(../../assets/checkbox-checked.png);
+            }
+
+            span {
+                position: absolute;
+                width: 1.3rem;
+                height: 1.3rem;
+                background-image: url(../../assets/checkbox.png);
+                margin-left: -2em;
+            }
+            
+        }
+        p {
+            font-size: 0.75rem;
+            line-height: 14px;
+            color: rgba(31, 32, 65, 0.5);
+            margin: 5px 0 0 0;
+        }
+    }
+}
