@@ -5,13 +5,13 @@ $( function() {
     $('.dropdown').find('input').ready().val(0);
 
     // событие клика по полю ввода
-    $('#dropdown, #dropdown-bedroom').find('.dropdown__form').click(function() {
+    $('.dropdown, .dropdown_bedroom').find('.dropdown__form').click(function() {
         // открытие-закрытие формы
         $(this).parent().find('.dropdown__list').slideToggle();
 
     });  
     // событие клика по кнопке "плюс"
-    $('#dropdown, #dropdown-bedroom').find('#dropdown-adult, #dropdown-child, #dropdown-baby').find('.plus').parent().click(function() {
+    $('.dropdown, .dropdown_bedroom').find('#dropdown-adult, #dropdown-child, #dropdown-baby').find('.plus').parent().click(function() {
         // удаление disable из кнопки "минус"
         $(this).parents('#dropdown-adult, #dropdown-child, #dropdown-baby').find('.minus').parent().removeClass('dropdown-button_disable');
         // получение значения поля 
@@ -22,7 +22,7 @@ $( function() {
     });
  
     // событие клика по кнопке "минус"
-    $('#dropdown, #dropdown-bedroom').find('#dropdown-adult, #dropdown-child, #dropdown-baby').find('.minus').parent().click(function() {
+    $('.dropdown, .dropdown_bedroom').find('#dropdown-adult, #dropdown-child, #dropdown-baby').find('.minus').parent().click(function() {
         // получение значения поля
         var human_value = $(this).parents('#dropdown-adult, #dropdown-child, #dropdown-baby').find('input').val();
         // проверка на положительное значение
@@ -32,7 +32,7 @@ $( function() {
         };
     })
     // событие клика по кнопке "применить"
-    $('#dropdown').find('.dropdown__complete-button__done').click(function() {
+    $('.dropdown').find('.dropdown__complete-button__done').click(function() {
         // счет общего значения полей
         var score = parseInt( $(this).parents('.dropdown').find('#dropdown-adult').find('input').val() ) + 
                     parseInt( $(this).parents('.dropdown').find('#dropdown-child').find('input').val() ) +
@@ -48,7 +48,7 @@ $( function() {
         $(this).parents('.dropdown').find('.dropdown__list').slideToggle();
     })
     // клик по кнопке "отчистить"
-    $('#dropdown').find('.dropdown__complete-button__clear').click(function() {
+    $('.dropdown').find('.dropdown__complete-button__clear').click(function() {
         // обнуление значения полей
         $(this).parents('.dropdown').find('#dropdown-adult, #dropdown-child, #dropdown-baby').find('input').val(0);
         // запись в плейсхолдер начального значения
@@ -56,7 +56,8 @@ $( function() {
     })
 
     // cобытие клика по форме для dropdown-bedroom
-    $('#dropdown-bedroom').find('.dropdown__form').click(function() {
+    $('.dropdown_bedroom').find('.dropdown__form').click(function() {
+        console.log('check')
         var bedroom_value = $(this).parent().find('#dropdown-adult').find('input').val();
         var bed_value = $(this).parent().find('#dropdown-child').find('input').val();
         /*
@@ -64,7 +65,8 @@ $( function() {
             bedroom_value = bed_value = 0;
         }
         */
-        $(this).parents('.dropdown').find('.dropdown__form_placeholder').text(`${bedroom_value} Спальни, ${bed_value} Кроватей`);
+        
+        $(this).parents('.dropdown_bedroom').find('.dropdown__form_placeholder').text(`${bedroom_value} Спальни, ${bed_value} Кровати`);
     })
 
 })

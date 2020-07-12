@@ -26,8 +26,7 @@ body
 					p Default
 				div.component-container 
 					include ../components/dropdown/dropdown.pug
-					+Dropdown('Сколько гостей', 'dropdown', 'Взрослые', 'Дети', 'Младенцы')
-					
+					+Dropdown('Сколько гостей', '', 'Взрослые', 'Дети', 'Младенцы')
 			div.main__container__item 
 				div.component-title
 					p Masked Text Field
@@ -116,15 +115,25 @@ body
 					p Dropdown
 					p Default	
 				div.component-container 
-					+Dropdown('Сколько кроватей', 'dropdown-bedroom', 'Спальни', 'Кровати', 'Ванные комнаты')
+					+Dropdown('Сколько кроватей', '_bedroom', 'Спальни', 'Кровати', 'Ванные комнаты')
 			div.main__container__item 
 				div.component-title 
 					p Dropdown
 					p Default	
 				div.component-container 
-					+Dropdown('Сколько кроватей', 'dropdown-bedroom', 'Спальни', 'Кровати', 'Ванные комнаты')
-					
-					
+					+Dropdown('Сколько кроватей', '_bedroom', 'Спальни', 'Кровати', 'Ванные комнаты')
+			div.main__container__item 
+				div.component-container 
+					include ../components/expandable-checkbox-list/expandable-checkbox-list.pug 
+					+expandable-checkbox-list('expandable checkbox list')
+		div.main__container 
+			div.main__container__item 
+				div.component-title 
+					p Dropdown
+					p Default
+				div.component-container 
+					include ../components/dropdown/dropdown.pug
+					+Dropdown('Сколько гостей', '', 'Взрослые', 'Дети', 'Младенцы')
 					
 
 	

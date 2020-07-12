@@ -1,0 +1,58 @@
+.expandable-checkbox {
+    width: 266px;
+    height: 44px;
+    .expandable-checkbox__title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        p {
+            font-size: 0.75rem;
+            line-height: 15px;
+            text-transform: uppercase;
+            font-weight: bold;
+            color: #1F2041;
+        }
+        span {
+            display: flex;
+            font-family: 'Material Icons';
+            font-size: 1.5rem;
+            line-height: 24px;
+            color: rgba(31, 32, 65, 0.5);
+            width: 44px;
+            height: 44px;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    .expandable-checkbox__list {
+        list-style-type: none;
+        margin: 0;
+        padding: 0 0 0 35px;
+        .expandable-checkbox__list__item {
+            margin-bottom: 13px;
+            label {
+                display: flex;
+                align-items: center;
+                input {
+                    -moz-appearance: none;
+                    -webkit-appearance: none;
+                    position: absolute;
+                }
+
+                input:checked + span {
+                    background-image: url(../../assets/checkbox-checked.png);
+                }
+
+                span {
+                    position: absolute;
+                    width: 1.25rem;
+                    height: 1.25rem;
+                    background-image: url(../../assets/checkbox.png);
+                    margin-left: -2em;
+                }
+
+            }
+        }
+    }
+}

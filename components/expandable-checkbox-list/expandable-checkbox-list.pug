@@ -1,0 +1,31 @@
+mixin expandable-checkbox-list(title)
+    div.expandable-checkbox
+        div.expandable-checkbox__title
+            p=title 
+            span expand_more
+        ul.expandable-checkbox__list 
+            li.expandable-checkbox__list__item 
+                label(for="breakfast")
+                    input(type="checkbox" id="breakfast")
+                    span 
+                    | Завтрак 
+            li.expandable-checkbox__list__item 
+                label(for="table")
+                    input(type="checkbox" id="table")
+                    span 
+                    | Письменный стол 
+            li.expandable-checkbox__list__item 
+                label(for="baby-chair")
+                    input(type="checkbox" id="baby-chair")
+                    span 
+                    | Стул для кормления
+            li.expandable-checkbox__list__item 
+                label(for="crib")
+                    input(type="checkbox" id="crib")
+                    span 
+                    | Кроватка
+            li.expandable-checkbox__list__item 
+                label(for="shampoo")
+                    input(type="checkbox" id="shampoo")
+                    span 
+                    | Шампунь

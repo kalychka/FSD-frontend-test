@@ -49,5 +49,7 @@ import './components/buttons/button-pay.scss'
 
 import './components/pagination/pagination.scss'
 
+import './components/expandable-checkbox-list/expandable-checkbox-list.scss'
+import './components/expandable-checkbox-list/expandable-checkbox-list.js'
 
 

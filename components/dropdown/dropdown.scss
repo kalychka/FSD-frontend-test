@@ -1,4 +1,4 @@
-.dropdown {
+.dropdown, .dropdown_bedroom {
     border: 1px solid rgba(31, 32, 65, 0.25);
     border-radius: 2px;
     .dropdown__form {
@@ -104,11 +104,11 @@
     }
 }
 
-#dropdown-bedroom {
+.dropdown_bedroom {
     .dropdown__form, .dropdown__list {
         width: 266px;
     }
-    .dropdown__complete-button {
+    .dropdown__list .dropdown__complete-button {
         display: none;
     }
 }
