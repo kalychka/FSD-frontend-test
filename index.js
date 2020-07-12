@@ -53,3 +53,4 @@ import './components/expandable-checkbox-list/expandable-checkbox-list.js'
 
 import './components/rich-checkbox/rich-checkbox.scss'
 
+import './components/bullet-list/bullet-list.scss'

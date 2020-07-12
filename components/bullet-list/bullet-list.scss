@@ -1,0 +1,33 @@
+.bullet-list {
+    .bullet-list__title {
+        font-size: 0.75rem;
+        line-height: 15px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #1F2041;
+    }
+
+    .bullet-list__list {
+        list-style-type: none;
+        padding: 0;
+        li {
+            margin-bottom: 10px;
+            label {
+                display: flex;
+                align-items: center;
+                font-size: 0.875rem;
+                line-height: 24px;
+                color: rgba(31, 32, 65, 0.75);
+                span {
+                    display: block;
+                    width: 10px;
+                    height: 10px;
+                    background-color: rgba(31, 32, 65, 0.25);
+                    border-radius: 50%;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+
+}

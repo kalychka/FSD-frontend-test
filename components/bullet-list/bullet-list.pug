@@ -1,0 +1,16 @@
+mixin bullet-list(title)
+    div.bullet-list 
+        p(class="bullet-list__title")=title
+        ul.bullet-list__list 
+            li 
+                label
+                    span.bullet-list__list__animals
+                    | Нельзя с питомцами
+            li 
+                label
+                    span.bullet-list__list__party
+                    | Без вечеринок и мероприятий
+            li 
+                label
+                    span.bullet-list__list__time
+                    | Время прибытия - после 13:00, <br> а выезд до 12:00
