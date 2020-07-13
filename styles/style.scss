@@ -24,15 +24,21 @@ main {
 
 .main {
     display: grid;
-    grid-template-rows: auto 100px auto;
+    grid-template-rows: auto 100px auto auto;
     grid-template-columns: auto auto auto;
     margin-bottom: 100px;
     div:first-child, div:nth-child(2), div:nth-child(3) {
         grid-row: 1 / 2;
         
     }
-    div:last-child, div:nth-child(5), div:nth-child(4) {
+    div:nth-child(6), div:nth-child(5), div:nth-child(4) {
         grid-row: 3 / 4;
+    }
+    div:nth-child(7), div:nth-child(8) {
+        grid-row: 4 / 5;
+    }
+    div:nth-child(8) {
+        grid-column: 2 / 4;
     }
     .main__container {
         display: flex;

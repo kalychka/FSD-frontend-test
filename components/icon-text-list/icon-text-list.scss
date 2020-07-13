@@ -1,0 +1,43 @@
+.icon-text-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    li {
+        display: inherit;
+        padding-bottom: 17px;
+        padding-top: 17px;
+        border-bottom: 1px solid rgba(31, 32, 65, 0.1);
+    }
+
+    span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 48px;
+        height: 48px;
+        font-family: 'Material Icons';
+        font-size: 3rem;
+        line-height: 2.5625rem;
+        background: -moz-linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+        background: -webkit-linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+        -moz-background-clip: text;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color:transparent;
+        margin-right: 10px;
+    }
+    .icon-text-list__description {
+        font-size: 0.875rem;
+        line-height: 1.5rem;
+        color: rgba(31, 32, 65, 0.75);
+        .title {
+            font-weight: bold;
+        }
+        p {
+            margin: 0;
+        }
+    }
+}
