@@ -56,3 +56,5 @@ import './components/rich-checkbox/rich-checkbox.scss'
 import './components/bullet-list/bullet-list.scss'
 
 import './components/icon-text-list/icon-text-list.scss'
+
+import './components/comment/comment.scss'

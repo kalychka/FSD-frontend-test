@@ -1,0 +1,10 @@
+mixin comment(name, time, description, id)
+    div(id=id).comment 
+        div.comment__title 
+            img(src="")
+            div.name-time 
+                p=name 
+                p=time 
+        div.comment__description 
+            
+            p=description

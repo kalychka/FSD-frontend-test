@@ -1,4 +1,4 @@
-.like-button__label {
+.like-button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,7 +19,7 @@
         color: rgba(31, 32, 65, 0.25);
         user-select: none;
     }
-    .btn-counter {
+    .like-counter {
         margin-left: 5px;
         font-size: 0.625rem;
         text-decoration: none;
@@ -29,7 +29,7 @@
     }
 }   
 
-.like-button__label_active {
+.like-button_active {
     border-color: #BC9CFF !important;
     a {
         color: #BC9CFF !important;

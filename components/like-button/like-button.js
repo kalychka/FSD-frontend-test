@@ -1,28 +1,16 @@
 $(function() {
-    // объявление переменной лайков
-    var like = 0;
     // клик по label 
-    $("#like").click(function() {
+    $(".like-button").click(function() {
+        // объявление переменной лайков
+        var like = parseInt($(this).find(".like-counter").text());
+        console.log(like);
         // увеличение числа лайков на один
         like += 1;
         // запись числа в ссылку
-        $(this).find('#like__counter').text(like);
-    })
-})
-
-
-$(function() {
-    // объявление переменной лайков
-    var like = 0;
-    // клик по label 
-    $("#like-active").click(function() {
-        // увеличение числа лайков на один
-        like += 1;
-        // запись числа в ссылку
-        $(this).find('#like-active__counter').text(like);
+        $(this).find('.like-counter').text(like);
         // изменение спрайта
         $(this).find("span").text("favorite");
         // добавление модификатора
-        $(this).addClass("like-button__label_active")
+        $(this).addClass("like-button_active")
     })
 })
