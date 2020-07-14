@@ -1,10 +1,10 @@
 .expandable-checkbox {
     width: 266px;
-    height: 44px;
     .expandable-checkbox__title {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        height: 44px;
         cursor: pointer;
         p {
             font-size: 0.75rem;

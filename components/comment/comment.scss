@@ -1,0 +1,51 @@
+.comment {
+    .comment__title {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        .avatar {
+            width: 55px;
+            height: 60px;
+            background-position: center -10px;
+            background-repeat: no-repeat;
+            margin-right: 9.3px;
+        }
+        .name-time {
+            p {
+                font-size: 0.875rem;
+                line-height: 24px;
+                color: rgba(31, 32, 65, 0.75);
+                margin: 0;
+            }
+
+            .name {
+                font-weight: bold;
+            }
+        }
+    }
+
+    .comment__description {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        max-width: 653px;
+        margin: 10px 0 0 0;
+        .like-button {
+            flex-shrink: 0;
+            margin-left: 5px;
+        }
+
+        p {
+            font-size: 0.875rem;
+            line-height: 24px;
+            color: rgba(31, 32, 65, 0.75);
+            margin: 0;
+        }
+    }
+
+}
+
+#comment-1 .avatar {
+    background-image: url(../../assets/comment-1.png);
+
+}

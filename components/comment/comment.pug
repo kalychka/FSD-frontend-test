@@ -1,10 +1,10 @@
 mixin comment(name, time, description, id)
     div(id=id).comment 
         div.comment__title 
-            img(src="")
+            div.avatar
             div.name-time 
-                p=name 
+                p(class="name")=name 
                 p=time 
         div.comment__description 
-            
+            +like('11')
             p=description

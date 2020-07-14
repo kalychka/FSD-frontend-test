@@ -3,7 +3,7 @@ $(function() {
     $(".like-button").click(function() {
         // объявление переменной лайков
         var like = parseInt($(this).find(".like-counter").text());
-        console.log(like);
+        
         // увеличение числа лайков на один
         like += 1;
         // запись числа в ссылку
