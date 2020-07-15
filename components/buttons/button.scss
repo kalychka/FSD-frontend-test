@@ -1,4 +1,4 @@
-.button {
+.button, .button-hover {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -6,6 +6,7 @@
     height: 44px;
     border-radius: 22px;
     background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    cursor: pointer;
     a {
         font-size: 0.75rem;
         text-transform: uppercase;
@@ -16,6 +17,82 @@
     }
 }
 
-.button_hover:hover {
+.button-hover:hover {
     opacity: 0.5;
+}
+
+.button-outline, .button-outline_hover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 99px;
+    height: 44px;
+    border-radius: 22px;
+    background: transparent;
+    border: 2px solid #BC9CFF;
+    margin-top: 30px;
+    cursor: pointer;
+    a {
+        font-size: 0.75rem;
+        line-height: 15px;
+        text-transform: uppercase;
+        color: #BC9CFF;
+        text-decoration: none;
+        font-weight: bold;
+    }
+}
+
+.button-outline_hover:hover {
+    opacity: 0.5;
+}
+
+.button-pay {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 320px;
+    height: 44px;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    border-radius: 22px;
+    margin-top: 30px;
+    cursor: pointer;
+    cursor: pointer;
+    a {
+        font-size: 0.75rem;
+        font-weight: bold;
+        line-height: 15px;
+        text-transform: uppercase;
+        color: #fff;
+        text-decoration: none;
+    }
+    span {
+        display: flex;
+        font-family: 'Material Icons';
+        font-size: 1.5rem;
+        color: #fff;
+        position: absolute;
+        right: 0;
+        width: 44px;
+        height: 44px;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.icon-link, .icon-link_hover {
+    margin-top: 31px;
+    a {
+        font-size: 0.75rem;
+        font-weight: bold;
+        line-height: 15px;
+        text-transform: uppercase;
+        color: #BC9CFF;
+        text-decoration: none;
+    }
+}
+
+.icon-link_hover a:hover {
+    color: rgba(31, 32, 65, 0.5);
 }

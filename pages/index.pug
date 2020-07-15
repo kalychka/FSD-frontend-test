@@ -94,18 +94,16 @@ body
 						p Buttons 
 					div.component-container 
 						include ../components/buttons/button.pug 
-						+button('')
-						+button('button_hover')
+						+button('button', 'click me')
+						+button('button-hover', 'click me')
+					div.component-container  
+						+button('button-outline', 'click me')
+						+button('button-outline_hover', 'click me')
 					div.component-container 
-						include ../components/buttons/button-outline.pug 
-						+button-outline('')
-						+button-outline('button-outline_hover')
+						+button('icon-link', 'click me')
+						+button('icon-link_hover', 'click me')
 					div.component-container 
-						include ../components/buttons/icon-link.pug 
-						+icon-link('')
-						+icon-link('icon-link_hover')
-					div.component-container 
-						include ../components/buttons/button-pay.pug 
+						+button('button-pay', 'Перейти к оплате')
 				div.main__container__item 
 					div.component-title 
 						p Pagination 
