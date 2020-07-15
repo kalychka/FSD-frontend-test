@@ -8,41 +8,41 @@ body
 		div.logo
 		section.main
 			div.main__container
-				div.main__container__item 
+				div.main__container__item.item__text-field
 					div.component-title 
 						p Text Field
 						p Default
-					div.component-container 
+					div.component-container
 						include ../components/text_field/text_field.pug
 						+focus(' ')
-				div.main__container__item 
+				div.main__container__item.item__text-field  
 					div.component-title 
 						p Text Field
 						p Default
 					div.component-container
 						include ../components/text_field/text_field.pug 
 						+focus('text_field__input_focus')
-				div.main__container__item 
+				div.main__container__item.item__dropdown 
 					div.component-title 
 						p Dropdown
 						p Default
 					div.component-container 
 						include ../components/dropdown/dropdown.pug
 						+Dropdown('Сколько гостей', '', 'Взрослые', 'Дети', 'Младенцы')
-				div.main__container__item 
+				div.main__container__item.item__masked-text-field 
 					div.component-title
 						p Masked Text Field
 						p Default
 					div.component-container 
 						include ../components/masked text field/masked_text.pug
-				div.main__container__item 
+				div.main__container__item.item__date-dropdown 
 					div.component-title 
 						p Date Dropdown
 					div.component-container
 						include ../components/date dropdown/date_dropdown.pug 
 						+date-dropdown('_1')
 						+date-dropdown('_2')
-				div.main__container__item 
+				div.main__container__item.item__filter-date-dropdown 
 					div.component-title 
 						p Filter Date Dropdown
 					div.component-container
@@ -53,43 +53,43 @@ body
 					div.component-container
 						include ../components/subscriptions-text-field/subscriptions-text-field.pug
 			div.main__container
-				div.main__container__item 
+				div.main__container__item.item__checkbox-buttons 
 					div.component-title 
 						p CheckBox Buttons
 					div.component-container
 						include ../components/checkbox-buttons/checkbox-buttons.pug
-				div.main__container__item
+				div.main__container__item.item__radio-buttons
 					div.component-title 
 						p Radio Buttons
 					div.component-container
 						include ../components/radio-buttons/radio-buttons.pug
-				div.main__container__item 
+				div.main__container__item.item__toggle 
 					div.component-title 
 						p Toggle
 					div.component-container.main__container__item_column 
 						include ../components/toggle/toggle.pug 
 						include ../components/toggle/toggle.pug		
-				div.main__container__item
+				div.main__container__item.item__like-buttons
 					div.component-title 
 						p Like Button 
 					div.component-container
 						include ../components/like-button/like-button.pug 
 						+like('2')
 						+like('11')
-				div.main__container__item
+				div.main__container__item.item__rate-buttons
 					div.component-title 
 						p Rate Button
 					div.component-container
 						include ../components/rate-buttons/rate-buttons.pug 
 						include ../components/rate-buttons/rate-buttons.pug 
 			div.main__container 
-				div.main__container__item
+				div.main__container__item.item__range-slider
 					div.component-title
 						p Range slider
 						input(type="text" id="amount" readonly)
 					div.component-container 
 						include ../components/slider-range/slider-range.pug
-				div.main__container__item 
+				div.main__container__item.item__buttons 
 					div.component-title 
 						p Buttons 
 					div.component-container 
@@ -112,7 +112,7 @@ body
 					div.component-container 
 						include ../components/pagination/pagination.pug
 			div.main__container 
-				div.main__container__item 
+				div.main__container__item.item__dropdown 
 					div.component-title 
 						p Dropdown
 						p Default	
@@ -124,10 +124,6 @@ body
 						p Default	
 					div.component-container 
 						+Dropdown('Сколько кроватей', '_bedroom', 'Спальни', 'Кровати', 'Ванные комнаты')
-				div.main__container__item 
-					div.component-container 
-						include ../components/expandable-checkbox-list/expandable-checkbox-list.pug 
-						+expandable-checkbox-list('expandable checkbox list')
 			div.main__container 
 				div.main__container__item 
 					div.component-title 
@@ -136,19 +132,29 @@ body
 					div.component-container 
 						include ../components/dropdown/dropdown.pug
 						+Dropdown('Сколько гостей', '', 'Взрослые', 'Дети', 'Младенцы')
+			div.main__container 
+				div.main__container__item 
+					div.component-title 
+						p Dropdown
+						p Default
+					div.component-container 
+						include ../components/dropdown/dropdown.pug
+						+Dropdown('Сколько гостей', '', 'Взрослые', 'Дети', 'Младенцы')
+			div.main__container 
+				div.main__container__item.item__expandable-checkbox-list 
+					div.component-container 
+						include ../components/expandable-checkbox-list/expandable-checkbox-list.pug 
+						+expandable-checkbox-list('expandable checkbox list')
+				div.main__container__item
+					div.component-container 
+						+expandable-checkbox-list('expandable checkbox list')
+			div.main__container 
 				div.main__container__item 
 					div.component-title 
 						p rich checkbox buttons
 					div.component-container 
 						include ../components/rich-checkbox/rich-checkbox.pug
 			div.main__container 
-				div.main__container__item 
-					div.component-title 
-						p Dropdown
-						p Default
-					div.component-container 
-						include ../components/dropdown/dropdown.pug
-						+Dropdown('Сколько гостей', '', 'Взрослые', 'Дети', 'Младенцы')
 				div.main__container__item 
 					div.component-container 
 						include ../components/bullet-list/bullet-list.pug

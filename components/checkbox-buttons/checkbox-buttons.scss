@@ -1,7 +1,9 @@
 .checkbox-buttons__list {
     list-style-type: none;
-    padding-left: 0;
-    margin: 0;
+    li:last-child {
+        margin-bottom: 0;
+    }
+
     li {
         margin-bottom: 13px;
         display: flex;
@@ -29,5 +31,6 @@
         input:checked + .checkbox-buttons__list__item {
             background-image: url(../../assets/checkbox-checked.png);
         }
+        
     }
 }
