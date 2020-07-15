@@ -1,4 +1,5 @@
 $(function() {
+    $('#amount').ready().val('5000₽ - 10000₽')
     $("#slider-range").slider({
         range: true,
         min: 0,
