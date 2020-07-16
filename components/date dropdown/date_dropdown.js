@@ -1,8 +1,6 @@
 $( function() {
     $( "#datepicker_1, #datepicker_2" ).datepicker({
         defaultDate: "+1d",
-        buttonImageOnly: true,
-        showOn: "both",
         firstDay: 1,
         dateFormat: "dd.mm.yy",
         minDate: 0,

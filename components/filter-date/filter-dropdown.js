@@ -1,7 +1,5 @@
 $(function() {
     $("#filter-dropdown").datepicker({
-        buttonImageOnly: true,
-        showOn: "both",
         range: 'period',
         firstDay: 1,
         defaultDate: "+1d",

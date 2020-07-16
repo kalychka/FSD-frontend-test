@@ -15,6 +15,9 @@
         color: #fff;
         text-decoration: none;
     }
+    span {
+        display: none;
+    }
 }
 
 .button-hover:hover {
@@ -40,6 +43,9 @@
         color: #BC9CFF;
         text-decoration: none;
         font-weight: bold;
+    }
+    span {
+        display: none;
     }
 }
 
@@ -90,6 +96,9 @@
         text-transform: uppercase;
         color: #BC9CFF;
         text-decoration: none;
+    }
+    span {
+        display: none;
     }
 }
 
