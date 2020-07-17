@@ -1,0 +1,19 @@
+body {
+    background-color: #F4F4F6;
+}
+
+main {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 150px 140px 140px 140px;
+
+}
+
+.logo {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    top: 30px;
+    left: 30px;
+    background-image: url(../assets/logo.svg);
+}
