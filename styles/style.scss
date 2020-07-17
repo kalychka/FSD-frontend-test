@@ -13,6 +13,11 @@ ul {
     padding: 0;
 }
 
+.clearfix::after {
+    display: block;
+    clear: both;
+    content: " ";
+}
 
 
 

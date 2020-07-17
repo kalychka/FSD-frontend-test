@@ -1,0 +1,24 @@
+div.registration 
+    h3.registration__title Регистрация аккаунта
+    .registration__info
+        include ../text_field/text_field.pug 
+        .info__name
+            +focus('', 'Имя')
+        .info__surname
+            +focus('', 'Фамилия').surname
+        include ../radio-buttons/radio-buttons.pug
+    .registration__born 
+        p Дата рождения 
+        include ../masked text field/masked_text.pug
+    .registration__data-entry
+        p Данные для входа в сервис
+        .data-entry__email 
+            +focus('', 'Email')
+        .data-entry__password 
+            +focus('', 'Пароль')
+        include ../toggle/toggle.pug
+    include ../buttons/button.pug 
+    +button('button-pay', 'Перейти к оплате')
+    .registration__alt-entry 
+        p Уже есть аккаунт на Toxin 
+        +button('button-outline', 'Войти')
