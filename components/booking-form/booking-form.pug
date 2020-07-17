@@ -1,0 +1,35 @@
+div.booking-form 
+    .booking-form__title 
+        p.title__number № 888 
+            span люкс
+        p.title__price 9 990₽ 
+            span в сутки
+    .booking-form__time
+        include ../date dropdown/date_dropdown.pug
+        .from 
+            p.from__title Прибытие
+            +date-dropdown('_3')
+        .to
+            p.to__title Выезд
+            +date-dropdown('_4')
+    .booking-form__guests 
+        p.guests__title Гости
+        include ../dropdown/dropdown.pug
+        +Dropdown('Сколько гостей', '', 'Взрослые', 'Дети', 'Младенцы')
+    ul.booking-form__price-list 
+        li 
+            p 9 990₽ х 4 суток
+            p 39 960₽
+        li 
+            p Сбор за услуги: скидка 2 179₽ 
+                span i 
+            p 0₽
+        li 
+            p Сбор за дополнительные услуги
+                span i 
+            p 300₽
+        li.price-list__total 
+            p Итого
+            p 38 081₽
+    include ../buttons/button.pug 
+    +button('button-pay', 'Забронировать')
