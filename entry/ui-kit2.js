@@ -26,3 +26,5 @@ import '@components/masked text field/masked_text.js'
 import '@components/toggle/toggle.scss'
 
 import '@components/booking-form/booking-form.scss'
+
+import '@components/entry-form/entry-form.scss'

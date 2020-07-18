@@ -1,0 +1,13 @@
+div.entry-form 
+    h3.entry-form__title Войти
+    .entry-form__user-data 
+        include ../text_field/text_field.pug
+        .name 
+            +focus('', 'Email')
+        .surname
+            +focus('', 'Пароль')
+    include ../buttons/button.pug 
+    +button('button-pay', 'Войти')
+    .entry-form__have-acc 
+        p Нет аккаунта на Toxin?
+        +button('button-outline', 'Войти')
