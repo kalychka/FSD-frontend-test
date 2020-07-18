@@ -46,11 +46,11 @@ main {
         .main__container__item {
             display: flex;
             flex-direction: column;
-    
             .component-title {
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
+                margin-bottom: 15px;
                 input {
                     outline: none;
                     border: none;
@@ -60,12 +60,8 @@ main {
                     text-transform: uppercase;
                     color: rgba(31, 32, 65, 0.5);
                 }
-                P {
-                    font-size: 0.75rem;
-                    font-weight: bold;
-                    line-height: 15px;
+                p {
                     text-transform: uppercase;
-                    color: #1F2041;
                 }
                
             }
