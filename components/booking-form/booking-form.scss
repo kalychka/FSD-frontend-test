@@ -47,12 +47,6 @@
         }
         .from__title,
         .to__title {
-            font-style: normal;
-            font-weight: bold;
-            font-size: 0.75rem;
-            line-height: 0.9375rem;
-            text-transform: uppercase;
-            color: #1F2041;
             margin: 0 0 5px 0;
         }
     }
@@ -60,11 +54,6 @@
     .booking-form__guests {
         margin-bottom: 20px;
         .guests__title {
-            font-weight: bold;
-            font-size: 0.75rem;
-            line-height: 0.9375rem;
-            text-transform: uppercase;
-            color: #1F2041;
             margin: 0 0 5px 0;
         }
     }
@@ -80,10 +69,6 @@
             p {
                 display: flex;
                 align-items: center;
-                font-weight: normal;
-                font-size: 0.875rem;
-                line-height: 1.5rem;
-                color: rgba(31, 32, 65, 0.75);
                 margin: 0;
                 span {
                     display: flex;
@@ -111,12 +96,6 @@
                 height: 1px;
                 border: 1px dashed rgba(31, 32, 65, 0.25);
                 box-sizing: border-box;
-            }
-            p {
-                font-weight: bold;
-                font-size: 1.1875rem;
-                line-height: 1.5rem;
-                color: #1F2041;
             }
         }
     }

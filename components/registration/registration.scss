@@ -7,10 +7,6 @@
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     .registration__title {
-        font-weight: bold;
-        font-size: 1.5rem;
-        line-height: 1.875rem;
-        color: #1F2041;
         margin: 0 0 20px 0;
     }
     .registration__info .info__name,
@@ -26,13 +22,8 @@
         margin-bottom: 20px;
     }
 
-    .registration__born p,
-    .registration__data-entry p {
-        font-weight: bold;
-        font-size: 0.75rem;
-        line-height: 0.9375rem;
-        text-transform: uppercase;
-        color: #1F2041;
+    .registration__born h3,
+    .registration__data-entry h3 {
         margin: 0 0 5px 0;
     }
 

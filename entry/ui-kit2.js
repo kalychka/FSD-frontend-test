@@ -1,5 +1,4 @@
 require('./index.js')
-import '@/styles/style.scss'
 
 import '@/pages/ui-kit2.pug'
 import '@/styles/ui-kit2.scss'

@@ -1,5 +1,5 @@
 div.registration 
-    h3.registration__title Регистрация аккаунта
+    h1.registration__title Регистрация аккаунта
     .registration__info
         include ../text_field/text_field.pug 
         .info__name
@@ -8,10 +8,10 @@ div.registration
             +text-field('text_field__input', 'Фамилия').surname
         include ../radio-buttons/radio-buttons.pug
     .registration__born 
-        p Дата рождения 
+        h3 Дата рождения 
         include ../masked text field/masked_text.pug
     .registration__data-entry
-        p Данные для входа в сервис
+        h3 Данные для входа в сервис
         .data-entry__email 
             +text-field('text_field__input', 'Email')
         .data-entry__password 

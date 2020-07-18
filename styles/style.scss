@@ -1,10 +1,55 @@
 @import '../assets/montserrat.css';
 @import '../assets/material.css';
+@import '../assets/quicksand.css';
+
+
+$dark100: #1F2041; 
+$dark75: rgba(31, 32, 65, 0.75);
+$dark50: rgba(31, 32, 65, 0.5);
+$dark25: rgba(31, 32, 65, 0.25);
+$dark05: rgba(31, 32, 65, 0.05);
+$purple: #BC9CFF;
+$green: #6FCF97;
+
+h1 {
+    font-family: 'Quicksand', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 1.875rem;
+    color: $dark100;
+    margin: 0;
+}
+
+h2 {
+    font-family: 'Quicksand', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.1875rem;
+    line-height: 1.5rem;
+    color: $dark100;
+    margin: 0;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 0.75rem;
+    line-height: 0.9375rem;
+    text-transform: uppercase;
+    color: $dark100;
+    margin: 0;
+}
+
 
 body {
     font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    color: $dark75;
     padding: 0;
     margin: 0;
 };

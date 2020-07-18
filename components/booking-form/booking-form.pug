@@ -7,13 +7,13 @@ div.booking-form
     .booking-form__time
         include ../date dropdown/date_dropdown.pug
         .from 
-            p.from__title Прибытие
+            h3.from__title Прибытие
             +date-dropdown('_3')
         .to
-            p.to__title Выезд
+            h3.to__title Выезд
             +date-dropdown('_4')
     .booking-form__guests 
-        p.guests__title Гости
+        h3.guests__title Гости
         include ../dropdown/dropdown.pug
         +Dropdown('Сколько гостей', '', 'Взрослые', 'Дети', 'Младенцы')
     ul.booking-form__price-list 
@@ -29,7 +29,7 @@ div.booking-form
                 span i 
             p 300₽
         li.price-list__total 
-            p Итого
-            p 38 081₽
+            h2 Итого
+            h2 38 081₽
     include ../buttons/button.pug 
     +button('button-pay', 'Забронировать')

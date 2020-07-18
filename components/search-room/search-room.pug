@@ -1,16 +1,16 @@
 div.search-room 
-    h3.search-room__title 
+    h1.search-room__title 
         | Найдём номера под ваши пожелания
     .search-room__time
         include ../date dropdown/date_dropdown.pug
         .from 
-            p.from__title Прибытие
+            h3.from__title Прибытие
             +date-dropdown('_1')
         .to
-            p.to__title Выезд
+            h3.to__title Выезд
             +date-dropdown('_2')
     .search-room__guests 
-        p.guests__title Гости
+        h3.guests__title Гости
         include ../dropdown/dropdown.pug
         +Dropdown('Сколько гостей', '', 'Взрослые', 'Дети', 'Младенцы')
     .search-room__button 
