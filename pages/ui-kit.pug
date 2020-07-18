@@ -15,14 +15,14 @@ html(lang="en")
 							p Default
 						div.component-container
 							include ../components/text_field/text_field.pug
-							+focus(' ', 'Email')
+							+text-field('text_field__input', 'Email')
 					div.main__container__item.item__text-field  
 						div.component-title 
 							p Text Field
 							p Default
 						div.component-container
 							include ../components/text_field/text_field.pug 
-							+focus('text_field__input_focus', 'This is pretty awesome')
+							+text-field('text_field__input_focus', 'This is pretty awesome')
 					div.main__container__item.item__dropdown 
 						div.component-title 
 							p Dropdown
