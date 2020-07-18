@@ -3,9 +3,9 @@ div.registration
     .registration__info
         include ../text_field/text_field.pug 
         .info__name
-            +text-field('', 'Имя')
+            +text-field('text_field__input', 'Имя')
         .info__surname
-            +text-field('', 'Фамилия').surname
+            +text-field('text_field__input', 'Фамилия').surname
         include ../radio-buttons/radio-buttons.pug
     .registration__born 
         p Дата рождения 
