@@ -34,3 +34,79 @@
         color: rgba(31, 32, 65, 0.5);
     }
 }
+
+.date_dropdown {
+    width: 320px;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    .datepicker--pointer {
+        display: none;
+    }
+
+    .datepicker--nav {
+        border-bottom: none;
+        margin-bottom: 20px;
+        .datepicker--nav-action {
+            font-family: 'Material Icons';
+            font-size: 1.5rem;
+            line-height: 1.25rem;
+            color: #BC9CFF;
+        }
+    }
+    .datepicker--content {
+        margin-bottom: 20px;
+        .datepicker--day-name {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: bold;
+            font-size: 0.75rem;
+            line-height: 0.9375rem;
+            color: #BC9CFF;
+        }
+        .datepicker--cell {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: normal;
+            font-size: 0.75rem;
+            line-height: 0.9375rem;
+            color: rgba(31, 32, 65, 0.5);
+        }
+        .-other-month- {
+            color: rgba(31, 32, 65, 0.25);
+        }
+        .-current- {
+            background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+            border-radius: 50%;
+        }
+        .-range-from-,
+        .-range-to- {
+            background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+            border-radius: 50%;
+        }
+        .-in-range- {
+            background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+            opacity: 0.25;
+        }
+    }
+    .datepicker--buttons {
+        flex-direction: row-reverse;
+        border-top: none;
+        justify-content: space-between;
+        span:last-child {
+            color: rgba(31, 32, 65, 0.5);
+        }
+        span:first-child {
+            color: #BC9CFF;
+        }
+        .datepicker--button {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: bold;
+            font-size: 0.75rem;
+            line-height: 0.9375rem;
+            text-transform: uppercase;
+            height: auto;
+            flex: none;
+        }
+    }
+}
