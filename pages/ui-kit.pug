@@ -37,12 +37,10 @@ html(lang="en")
 						div.component-container 
 							include ../components/masked text field/masked_text.pug
 					div.main__container__item.item__date-dropdown 
-						div.component-title 
-							h3 Date Dropdown
 						div.component-container
 							include ../components/date dropdown/date_dropdown.pug 
-							+date-dropdown('__start')
-							+date-dropdown('__end')
+							+date-dropdown('Date dropdown','Date dropdown')
+							
 					div.main__container__item.item__filter-date-dropdown 
 						div.component-title 
 							h3 Filter Date Dropdown
