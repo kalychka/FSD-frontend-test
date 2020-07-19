@@ -6,14 +6,9 @@
     border-radius: 22px;
     background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
     cursor: pointer;
-    a {
-        font-size: 0.75rem;
-        text-transform: uppercase;
-        font-weight: bold;
-        line-height: 15px;
-        color: #fff;
-        text-decoration: none;
-    }
+    h3 {
+        color: white;
+    }  
     span {
         display: none;
     }
@@ -32,16 +27,10 @@
     border-radius: 22px;
     background: transparent;
     border: 2px solid #BC9CFF;
-    
     cursor: pointer;
-    a {
-        font-size: 0.75rem;
-        line-height: 15px;
-        text-transform: uppercase;
+    h3 {
         color: #BC9CFF;
-        text-decoration: none;
-        font-weight: bold;
-    }
+    }  
     span {
         display: none;
     }
@@ -61,15 +50,9 @@
     background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
     border-radius: 22px;
     cursor: pointer;
-    cursor: pointer;
-    a {
-        font-size: 0.75rem;
-        font-weight: bold;
-        line-height: 15px;
-        text-transform: uppercase;
-        color: #fff;
-        text-decoration: none;
-    }
+    h3 {
+        color: white;
+    }  
     span {
         display: flex;
         font-family: 'Material Icons';
@@ -86,14 +69,10 @@
 
 .icon-link, .icon-link_hover {
     margin-top: 31px;
-    a {
-        font-size: 0.75rem;
-        font-weight: bold;
-        line-height: 15px;
-        text-transform: uppercase;
+    cursor: pointer;
+    h3 {
         color: #BC9CFF;
-        text-decoration: none;
-    }
+    }  
     span {
         display: none;
     }
