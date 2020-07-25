@@ -1,16 +1,34 @@
 $(function() {
-    $("#filter-dropdown").datepicker({
-        range: 'period',
-        firstDay: 1,
-        defaultDate: "+1d",
-        dateFormat: "d MM",
-        monthNames : ['Янв','Фев','Мар','Апр','Май','Июн','Июл','Авг','Сен','Окт','Нояб','Дек'],
-        dayNamesMin: [ "ВС", "ПН", "ВТ", "СР", "ЧТ", "ПТ", "СБ" ],
-        minDate: 0,
-        showAnim: "fold",
-        duration: "fast",
-        onSelect: function(dateText, inst, extensionRange) {
-            $('#filter-dropdown').val(extensionRange.startDateText + ' - ' + extensionRange.endDateText);
-          }
+    $('#filter-dropdown').datepicker({
+        minDate: new Date(),
+        range: true,
+        multipleDatesSeparator: ' - ',
+        classes: 'filter-dropdown',
+        clearButton: true,
+        prevHtml: 'arrow_back',
+        nextHtml: 'arrow_forward',
+        todayButton: true,
+        navTitles: {
+            days: '<h2>MM yyyy</h2>'
+        },
+        language: {
+            today: 'Применить',
+            dateFormat: 'dd M'
+        },
+        onRenderCell: function(date, cellType) {
+            if (cellType == 'day') {
+                return {
+                    html: `${date.getDate()}<div class="bg-selected"><span></span></div>`
+                }
+            }
+        }
+    })
+    $(".filter-dropdown").find(".datepicker--button").click(function() {
+        if (this.dataset.action === 'today') {
+            $(this).parents('.filter-dropdown').removeClass('active');
+        }
+    })
+    $('.datepicker-to').click(function() {
+        $(this).parents('.date-dropdown__container').find('.datepicker-from').data('datepicker').show();
     })
 });

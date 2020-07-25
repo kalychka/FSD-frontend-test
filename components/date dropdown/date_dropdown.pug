@@ -1,5 +1,5 @@
-mixin date-dropdown(from, to)
-    .date-dropdown__container
+mixin date-dropdown(from, to, id)
+    div(id=id).date-dropdown__container
         .date-dropdown__from
             h3=from
             form(action="#").date-dropdown__form
@@ -9,6 +9,6 @@ mixin date-dropdown(from, to)
             h3=to
             form(action="#").date-dropdown__form
                 input(type="text" class="datepicker-to" placeholder="ДД.ММ.ГГГГ" readonly)
-                span expand_more   
+                span expand_more    
             
             

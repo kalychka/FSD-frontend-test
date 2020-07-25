@@ -6,12 +6,7 @@ div.booking-form
             span в сутки
     .booking-form__time
         include ../date dropdown/date_dropdown.pug
-        .from 
-            h3.from__title Прибытие
-            
-        .to
-            h3.to__title Выезд
-            
+        +date-dropdown('Прибытие','Выезд')         
     .booking-form__guests 
         h3.guests__title Гости
         include ../dropdown/dropdown.pug

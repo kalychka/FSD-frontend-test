@@ -1,5 +1,7 @@
 $(function() {
+    
     $('.datepicker-from').datepicker({
+        minDate: new Date(),
         range: true,
         multipleDatesSeparator: '-',
         classes: 'date-dropdown',

@@ -3,12 +3,7 @@ div.search-room
         | Найдём номера под ваши пожелания
     .search-room__time
         include ../date dropdown/date_dropdown.pug
-        .from 
-            h3.from__title Прибытие
-            
-        .to
-            h3.to__title Выезд
-            
+        +date-dropdown('Прибытие','Выезд', 'search-room__date-dropdown')
     .search-room__guests 
         h3.guests__title Гости
         include ../dropdown/dropdown.pug

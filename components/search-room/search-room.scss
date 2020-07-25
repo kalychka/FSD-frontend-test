@@ -9,17 +9,11 @@
     .search-room__title {
         margin: 0 0 20px 0;
     }
+
     .search-room__time {
-        display: flex;
-        justify-content: space-between;
         margin-bottom: 20px;
-        .from {
-            margin-right: 20px;
-        }
-        h3 {
-            margin: 0 0 5px 0;
-        }
     }
+    
     .search-room__guests {
         margin-bottom: 31px;
         .guests__title {
