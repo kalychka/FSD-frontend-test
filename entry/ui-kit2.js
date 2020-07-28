@@ -27,3 +27,12 @@ import '@components/toggle/toggle.scss'
 import '@components/booking-form/booking-form.scss'
 
 import '@components/entry-form/entry-form.scss'
+
+import '@components/filter-expand-dropdown/filter-expand-dropdown.scss'
+import '@components/filter-expand-dropdown/filter-expand-dropdown.js'
+
+import '@components/room-block/room-block.js'
+import '@components/room-block/room-block.scss'
+
+import '@components/rate-buttons/rate-buttons.js'
+import '@components/rate-buttons/rate-buttons.scss'

@@ -17,3 +17,11 @@ html(lang="en")
                     include ../components/booking-form/booking-form.pug
                 .column__item 
                     include ../components/entry-form/entry-form.pug
+            .main__column
+                .column__item 
+                    include ../components/filter-expand-dropdown/filter-expand-dropdown.pug
+                .column__item
+                    include ../components/room-block/room-block.pug 
+                    +room-block('№ 888', 'Люкс', '9 990', '145', 'room-1.png')
+                .column__item 
+                    +room-block('№ 840', '', '9 900', '65', 'room-2.png')

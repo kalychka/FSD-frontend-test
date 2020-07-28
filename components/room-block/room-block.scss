@@ -1,0 +1,141 @@
+.room-block {
+    width: 270px;
+    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+    .room-block__carousel{
+        position: relative;
+        img {
+            border-radius: 4px 4px 0 0;
+        }
+    }
+
+
+    .room-block__content {
+        background-color: white;
+        padding: 20px 17px 19px 20px;
+    }
+
+    .room-block__info {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 10px;
+        &:after {
+            position: absolute;
+            content: '';
+            width: 230px;
+            height: 1px;
+            background: rgba(31, 32, 65, 0.1);
+            bottom: 0;
+        }
+        .title {
+            font-family: 'Quicksand';
+            font-style: normal;
+            font-weight: bold;
+            font-size: 0.875rem;
+            line-height: 1.0625rem;
+            color: #1F2041;
+            span {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: bold;
+                font-size: 0.75rem;
+                line-height: 0.9375rem;
+                text-transform: uppercase;
+                color: #BC9CFF;
+                margin-left: 5px;
+            }
+        }
+        .price {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: bold;
+            font-size: 0.875rem;
+            line-height: 1.125rem;
+            color: rgba(31, 32, 65, 0.5);
+            text-align: right;
+            span {
+                margin-left: 5px;
+                font-weight: normal;
+            }
+        }
+    }
+
+    .room-block__reviews {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 8px;
+        .reviews-score {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: bold;
+            font-size: 0.875rem;
+            line-height: 1.125rem;
+            text-align: right;
+            color: rgba(31, 32, 65, 0.5);
+            span {
+                margin-left: 5px;
+                font-weight: normal;
+            }
+        }
+    }
+
+    .room-block__button{
+        position: absolute;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 151px;
+        height: 44px;
+        font-family: "Material Icons";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+        color: #FFFFFF;
+        background: linear-gradient(360deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 99.99%, rgba(255, 255, 255, 0) 100%);
+    }
+    .prevArrow {
+        transform: rotate(90deg);
+        left: -54px;
+        top: 54px;
+        
+    }
+
+    .nextArrow {
+        transform: rotate(-90deg);
+        top: 54px;
+        right: -54px;
+        
+    }
+    .room-dots {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        z-index: 3;
+        bottom: 10px;
+        right: 10px;
+        list-style-type: none;
+
+        li {
+            margin-right: 4px;
+            button {
+                font-size: 0;
+                padding: 0;
+                width: 7.5px;
+                height: 7.5px;
+                border: 1px solid #FFFFFF;
+                box-sizing: border-box;
+                background: transparent;
+                border-radius: 50%;
+                outline: none;
+            }
+        }
+        .slick-active > button {
+            background: white;
+        }
+    }
+}

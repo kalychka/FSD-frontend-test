@@ -1,0 +1,20 @@
+mixin room-block(number, options, price, reviews, photo) 
+    div.room-block 
+        div.room-block__carousel
+            img(src=require(`@/assets/img/${photo}`).default, alt="Аппартаменты-1")
+            img(src=require(`@/assets/img/${photo}`).default, alt="Аппартаменты-1")
+            img(src=require(`@/assets/img/${photo}`).default, alt="Аппартаменты-1")
+            img(src=require(`@/assets/img/${photo}`).default, alt="Аппартаменты-1")
+        div.room-block__content
+            div.room-block__info 
+                p(class="title")=number
+                    span=options
+                p(class="price")=price+'₽'
+                    span В сутки
+            div.room-block__reviews
+                include ../rate-buttons/rate-buttons.pug
+                p(class="reviews-score")=reviews 
+                    span Отзывов
+
+
+
