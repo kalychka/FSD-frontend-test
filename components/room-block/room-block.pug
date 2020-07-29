@@ -1,4 +1,4 @@
-mixin room-block(photo, number, options, price, reviews) 
+mixin room-block(photo, number, options, price, reviews, star) 
     div.room-block 
         div.room-block__carousel
             div
@@ -17,6 +17,7 @@ mixin room-block(photo, number, options, price, reviews)
                     span В сутки
             div.room-block__reviews
                 include ../rate-buttons/rate-buttons.pug
+                +rate-buttons(star)
                 p(class="reviews-score")=reviews 
                     span Отзывов
 

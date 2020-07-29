@@ -1,11 +1,9 @@
-ul(id="rate-buttons").rate-buttons-list.clearfix
-    li.rate-buttons-list__item 
-        span star_border
-    li.rate-buttons-list__item  
-        span star_border
-    li.rate-buttons-list__item  
-        span star_border
-    li.rate-buttons-list__item  
-        span star_border
-    li.rate-buttons-list__item  
-        span star_border
+mixin rate-buttons(rate)
+    ul.rate-buttons-list.clearfix
+        -for(let i = 1; i <= 5; i++)
+            li.rate-buttons-list__item
+                if(i <= rate) 
+                    span star
+                else 
+                    span star_border
+
