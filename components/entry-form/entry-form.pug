@@ -3,9 +3,9 @@ div.entry-form
     .entry-form__user-data 
         include ../text_field/text_field.pug
         .name 
-            +text-field('text_field__input', 'Email')
+            +text-field('text_field__input', 'Email', 'email')
         .surname
-            +text-field('text_field__input', 'Пароль')
+            +text-field('text_field__input', 'Пароль', 'password')
     include ../buttons/button.pug 
     +button('button-pay', 'Войти')
     .entry-form__have-acc 

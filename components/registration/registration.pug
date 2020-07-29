@@ -3,9 +3,9 @@ div.registration
     .registration__info
         include ../text_field/text_field.pug 
         .info__name
-            +text-field('text_field__input', 'Имя')
+            +text-field('text_field__input', 'Имя', 'text')
         .info__surname
-            +text-field('text_field__input', 'Фамилия').surname
+            +text-field('text_field__input', 'Фамилия', 'text').surname
         include ../radio-buttons/radio-buttons.pug
     .registration__born 
         h3 Дата рождения 
@@ -13,9 +13,9 @@ div.registration
     .registration__data-entry
         h3 Данные для входа в сервис
         .data-entry__email 
-            +text-field('text_field__input', 'Email')
+            +text-field('text_field__input', 'Email', 'email')
         .data-entry__password 
-            +text-field('text_field__input', 'Пароль')
+            +text-field('text_field__input', 'Пароль', 'password')
         include ../toggle/toggle.pug
     include ../buttons/button.pug 
     +button('button-pay', 'Перейти к оплате')
