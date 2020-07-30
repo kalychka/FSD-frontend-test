@@ -10,3 +10,5 @@ import '@components/buttons/button.scss'
 import '@components/footer/footer.scss'
 
 import '@components/subscriptions-text-field/subscriptions-text-field.scss'
+
+import '@components/footer-creative/footer-creative.scss'

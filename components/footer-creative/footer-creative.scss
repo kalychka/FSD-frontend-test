@@ -1,0 +1,32 @@
+.footer-creative {
+    background: #FFFFFF;
+    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+    padding: 120px 104px 120px 104px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img {
+        margin-bottom: 20px;
+    }
+    p {
+        margin-bottom: 25px;
+    }
+    .footer-icons {
+        a {
+            margin-right: 20px;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+        i {
+            font-family: 'Font Awesome 5 Brands';
+            font-size: 1.5rem;
+            line-height: 1.4375rem;
+            &::before {
+                background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+    }
+}

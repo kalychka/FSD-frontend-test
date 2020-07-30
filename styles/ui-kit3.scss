@@ -25,4 +25,9 @@ main {
     .main__item:nth-child(3) {
         grid-row: 5/6;
     }
+    .main__item:last-child {
+        grid-row: 7/8;
+        display: flex;
+        justify-content: center;
+    }
 }
