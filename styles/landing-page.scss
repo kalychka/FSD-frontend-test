@@ -1,0 +1,19 @@
+main {
+    min-height: 870px;
+    background-image: url('../assets/img/landing-bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-rows: 70px auto 320px 48px;
+    .search-window {
+        grid-row: 2/3;
+    }
+    .main__subtitle {
+        grid-row: 4/5;
+        text-align: right;
+    }
+}
