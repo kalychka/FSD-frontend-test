@@ -1,7 +1,5 @@
 body {
     padding: 140px 0;
-    display: grid;
-    grid-template-rows: auto 40px auto 40px auto 40px auto;
     background-color: #E5E5E5;
 }
 
@@ -13,4 +11,15 @@ body {
     top: 30px;
     left: 30px;
     background-image: url(../assets/logo.svg);
+}
+
+main {
+    display: grid;
+    grid-template-rows: auto 40px auto 40px auto 40px auto;
+    .main__item:first-child {
+        grid-row: 1/2;
+    }
+    .main__item:nth-child(2) {
+        grid-row: 3/4;
+    }
 }
