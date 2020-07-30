@@ -1,0 +1,22 @@
+header 
+    .container
+        img(src=require('@/assets/img/header-logo.svg').default, alt="toxin")
+        nav 
+            ul.header-nav 
+                li 
+                    a(href="#") О нас 
+                li
+                    a(href="#") Услуги
+                    span expand_more
+                li 
+                    a(href="#") Вакансии
+                li 
+                    a(href="#") Новости 
+                li
+                    a(href="#") Соглашения
+                    span expand_more
+            .header-entry
+                include ../buttons/button.pug
+                +button('button-outline', 'Войти')
+                +button('button', 'Зарегистрироваться')
+
