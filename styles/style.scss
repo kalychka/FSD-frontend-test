@@ -1,7 +1,7 @@
 @import '../assets/montserrat.css';
 @import '../assets/material.css';
 @import '../assets/quicksand.css';
-
+@import '../plugins/fontawesome/css/all.css';
 
 $dark100: #1F2041; 
 $dark75: rgba(31, 32, 65, 0.75);
@@ -65,7 +65,10 @@ ul, p {
     content: " ";
 }
 
-
+.container {
+    width: 1160px;
+    margin: 0 auto;
+}
 
 
 
