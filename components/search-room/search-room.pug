@@ -1,6 +1,7 @@
 div.search-room 
     h1.search-room__title 
-        | Найдём номера под ваши пожелания
+        | Найдём номера под 
+        <br> ваши пожелания
     .search-room__time
         include ../date dropdown/date_dropdown.pug
         +date-dropdown('Прибытие','Выезд', 'search-room__date-dropdown')

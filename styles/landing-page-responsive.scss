@@ -41,3 +41,27 @@
         align-items: center;
     }
 }
+
+@media screen and (max-width: 400px) {
+    main .wrapper .search-window .search-room {
+        max-width: 320px;
+        padding-left: 10px;
+        padding-right: 10px;
+        .search-room__time .date-dropdown__container {
+            justify-content: space-between;
+            .date-dropdown__from {
+                margin-right: 5px;
+            }
+        }
+
+        .search-room__guests .dropdown {
+            width: auto;
+        }
+
+        .search-room__button .button-pay {
+            width: auto;
+        }
+    }
+
+
+}

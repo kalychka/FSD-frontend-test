@@ -1,5 +1,5 @@
 .search-room {
-    width: 380px;
+    max-width: 380px;
     padding: 40px 30px 30px 30px;
     background-color: white;
     border: 1px solid rgba(0, 0, 0, 0.12);
@@ -8,6 +8,8 @@
     border-radius: 4px;
     .search-room__title {
         margin: 0 0 20px 0;
+        width: auto;
+        display: inline-block;
     }
 
     .search-room__time {
