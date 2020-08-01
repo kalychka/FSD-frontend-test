@@ -15,3 +15,5 @@ import '@components/date dropdown/date_dropdown.scss'
 import '@components/date dropdown/date_dropdown.js'
 import '@components/footer/footer.scss'
 import '@components/subscriptions-text-field/subscriptions-text-field.scss'
+
+import '@/styles/landing-page-responsive.scss'
