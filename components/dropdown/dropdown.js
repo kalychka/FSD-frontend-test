@@ -1,3 +1,4 @@
+import './dropdown.scss'
 $( function() {
     // скрытие формы при загрузке страницы
     $('.dropdown__list, .dropdown__complete-button__clear').ready().hide();

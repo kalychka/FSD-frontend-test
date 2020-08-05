@@ -1,3 +1,5 @@
+import './room-block.scss'
+import '@components/rate-buttons/rate-buttons.scss'
 $(document).ready(function(){
     $('.room-block').each(function() {
         $(this).find('.room-block__carousel').slick({

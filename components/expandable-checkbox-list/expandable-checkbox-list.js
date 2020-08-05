@@ -1,3 +1,4 @@
+import './expandable-checkbox-list.scss'
 $(function() {
     $('.expandable-checkbox__list').ready().hide();
     $('.expandable-checkbox__title').click(function() {

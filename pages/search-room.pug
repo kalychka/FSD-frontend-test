@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Search Room
+    body
+        include ../components/header/header.pug 
+        +header('')
+        main
+            .container 
+                .main-wrapper
+                    aside 
+                        .filter-item 
+                            h3 Даты пребывания в отеле
+                            include ../components/filter-date/filter-dropdown.pug
+                        .filter-item 
+                            h3 Гости 
+                            include ../components/dropdown/dropdown.pug
+                            +Dropdown('Сколько гостей?', '', 'Взрослые', 'Дети', 'Младенцы')
+                        .filter-item 
+                            include ../components/slider-range/slider-range.pug
+                            +range-slider('Диапазон цены', 'Стоимость за сутки пребывания в номере')
+                        .filter-item 
+                            include ../components/checkbox-buttons/checkbox-buttons.pug
+                        .filter-item 
+                            h3 Доступность
+                            include ../components/rich-checkbox/rich-checkbox.pug
+                        .filter-item 
+                            h3 Удобства номера 
+                            +Dropdown('Сколько Комнат?', '_bedroom', 'Спальни', 'Кровати', 'Ванные комнаты')
+                        .filter-item 
+                            include ../components/expandable-checkbox-list/expandable-checkbox-list.pug
+                            +expandable-checkbox-list('Дополнительные удобства')
+                    .main-wrapper__content 
+                        h1 Номера, которые мы для вас подобрали
+                        .layout 
+                            .layout__row
+                                include ../components/room-block/room-block.pug
+                                +room-block('room-1.png', '№ 888', 'Люкс', '9 990', '145', '5')
+                                +room-block('room-2.png', '№ 840', '', '9 900', '65', '4')
+                                +room-block('room-3.png', '№ 980', 'Люкс', '8 500', '35', '3')
+                            .layout__row 
+                                +room-block('room-4.png', '№ 856', '', '7 300', '19', '5')
+                                +room-block('room-5.png', '№ 740', '', '6 000', '44', '4')
+                                +room-block('room-6.png', '№ 982', '', '5 800', '56', '3')
+                            .layout__row 
+                                +room-block('room-7.png', '№ 678', '', '5 500', '45', '5')
+                                +room-block('room-8.png', '№ 450', '', '5 300', '39', '4')
+                                +room-block('room-9.png', '№ 350', '', '5 000', '77', '3')
+                            .layout__row 
+                                +room-block('room-10.png', '№ 666', '', '5 000', '25', '5')
+                                +room-block('room-11.png', '№ 444', '', '5 000', '15', '3')
+                                +room-block('room-12.png', '№ 352', '', '6 000', '55', '3')
+
+
+                    

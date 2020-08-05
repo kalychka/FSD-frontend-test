@@ -1,3 +1,4 @@
+import './filter-expand-dropdown.scss'
 $(function() {
     $('.filter-expand-dropdown').datepicker({
         inline: true,

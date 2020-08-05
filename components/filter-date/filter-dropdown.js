@@ -1,3 +1,4 @@
+import './filter-dropdown.scss'
 $(function() {
     $('#filter-dropdown').datepicker({
         minDate: new Date(),

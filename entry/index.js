@@ -1,4 +1,6 @@
 require('@/plugins/jquery.min.js')
+require('@/plugins/jquery-ui-dist/jquery-ui.js')
+require('@/plugins/jquery-ui-dist/jquery-ui.css')
 
 require('@/plugins/jquery.maskedinput.min.js')
 

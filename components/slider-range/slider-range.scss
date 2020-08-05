@@ -1,3 +1,23 @@
+.randge-slider__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    #amount {
+        width: 40%;
+        outline: none;
+        border: none;
+        text-align: right;
+        color: rgba(31, 32, 65, 0.5);
+        text-transform: uppercase;
+    }
+}
+
+.range-slider .range-slider__subtitle {
+    margin-top: 10px;
+}
+
+
 .ui-slider {
     width: 266px;
     height: 6px;

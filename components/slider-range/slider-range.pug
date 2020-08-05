@@ -1,1 +1,7 @@
-div(id="slider-range")
+mixin range-slider(title, subtitle)
+    div.range-slider
+        div.randge-slider__title 
+            h3=title
+            input(type="text" readonly id="amount") 
+        div(id="slider-range")
+        p(class="range-slider__subtitle")=subtitle

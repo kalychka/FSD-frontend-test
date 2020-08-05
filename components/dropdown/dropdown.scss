@@ -1,7 +1,7 @@
 .dropdown, .dropdown_bedroom {
     border: 1px solid rgba(31, 32, 65, 0.25);
     border-radius: 2px;
-    width: 320px;
+    width: auto;
     .dropdown__form {
         display: flex;
         justify-content: space-between;
@@ -35,7 +35,7 @@
         z-index: 100;
         background: #fff;
         margin: 0;
-        width: 320px;
+        width: 266px;
         list-style: none;
         padding: 7px 15px 13px 15px;
         box-sizing: border-box;

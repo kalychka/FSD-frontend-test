@@ -1,3 +1,4 @@
+import './slider-range.scss'
 $(function() {
     $('#amount').ready().val('5000₽ - 10000₽')
     $("#slider-range").slider({
