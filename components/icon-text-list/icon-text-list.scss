@@ -1,4 +1,5 @@
-.icon-text-list {
+.icon-text-list,
+.icon-text-list_cozy {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,6 +15,10 @@
         padding-bottom: 17px;
         padding-top: 17px;
         border-bottom: 1px solid rgba(31, 32, 65, 0.1);
+        &:last-child {
+            visibility: hidden;
+            position: absolute;
+        }
     }
 
     span {
@@ -44,4 +49,10 @@
             margin: 0;
         }
     }
+}
+
+.icon-text-list_cozy li:last-child {
+    visibility: visible;
+    position: relative;
+    border-bottom: none;
 }

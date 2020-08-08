@@ -1,12 +1,12 @@
 
-mixin comment(name, time, description, id)
-    div(id=id).comment 
+mixin comment(avatar, name, time, like, description)
+    div.comment 
         div.comment__title 
-            div.avatar
+            img(src=require(`@/assets/img/${avatar}`).default, alt="avatar").avatar
             div.name-time 
                 p(class="name")=name 
                 p=time 
         div.comment__description 
             include ../like-button/like-button.pug
-            +like('11')
+            +like(like)
             p=description

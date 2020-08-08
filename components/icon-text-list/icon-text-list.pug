@@ -1,11 +1,18 @@
-ul.icon-text-list
-    li 
-        span insert_emoticon
-        div.icon-text-list__description
-            p.title Комфорт
-            p.subtitle Шумоподавляющие стены
-    li 
-        span location_city
-        div.icon-text-list__description
-            p.title Удобство
-            p.subtitle Окно в каждой из спален
+mixin icon-text-list(mod)
+    ul(class="icon-text-list"+mod)
+        li 
+            span insert_emoticon
+            div.icon-text-list__description
+                p.title Комфорт
+                p.subtitle Шумоподавляющие стены
+        li 
+            span location_city
+            div.icon-text-list__description
+                p.title Удобство
+                p.subtitle Окно в каждой из спален
+        li 
+            span whatshot
+            div.icon-text-list__description
+                p.title Уют
+                p.subtitle Номер оснащен камином
+        
