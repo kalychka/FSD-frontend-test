@@ -1,3 +1,4 @@
+import './date_dropdown.scss'
 $(function() {
     
     $('.datepicker-from').datepicker({

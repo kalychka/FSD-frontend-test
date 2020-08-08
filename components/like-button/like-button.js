@@ -1,3 +1,4 @@
+import './like-button.scss'
 $(function() {
     // клик по label 
     $(".like-button").click(function() {

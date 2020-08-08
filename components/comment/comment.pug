@@ -1,3 +1,4 @@
+
 mixin comment(name, time, description, id)
     div(id=id).comment 
         div.comment__title 
@@ -6,5 +7,6 @@ mixin comment(name, time, description, id)
                 p(class="name")=name 
                 p=time 
         div.comment__description 
+            include ../like-button/like-button.pug
             +like('11')
             p=description

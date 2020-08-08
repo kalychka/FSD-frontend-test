@@ -35,6 +35,17 @@ main {
                 
             }
         }
+        .main-wrapper__content__pagination {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+
+.main-wrapper .filter-item .dropdown {
+    width: 266px;
+    .dropdown__list {
+        width: 266px;
     }
 }
 

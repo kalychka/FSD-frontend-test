@@ -1,0 +1,108 @@
+main {
+    border-bottom: 1px solid rgba(31, 32, 65, 0.25);
+    padding-bottom: 70px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center; 
+    margin-bottom: 70px;
+    .gallery__side-img {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 30%;
+        img {
+            max-width: 100%;
+            min-width: 100%;
+            height: auto;
+
+        }
+    }
+    .gallery__main-img {
+        display: flex;
+        width: 60%;
+        img {
+            max-width: 100%;
+            min-width: 100%;
+            height: auto;
+        }
+    }
+}
+
+.room-info {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    column-gap: 70px;
+    .room-info__main {
+        display: grid;
+        grid-template-rows: auto auto auto;
+        row-gap: 30px;
+        .reviews {
+            display: flex;
+            justify-content: space-between;
+            h2 {
+                margin-bottom: 23px;
+            }
+            .pie__container {
+                display: flex;
+                img {
+                    margin-right: 30px;
+                }
+            }
+
+            .reviews__list {
+                margin-top: 30px;
+                list-style-type: none;
+                li label {
+                    display: flex;
+                    align-items: center;
+                    
+                }
+                span {
+                    display: block;
+                    width: 10px;
+                    height: 10px;
+                    margin-right: 5px;
+                    border-radius: 50%;
+                }
+                .yellow {
+                    background: linear-gradient(180deg, #FFE39C 0%, #FFBA9C 100%);
+                }
+                .blue {
+                    background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+                }
+                .violet {
+                    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+                }
+                .black {
+                    background: linear-gradient(180deg, #919191 0%, #3D4975 100%);
+                }
+            }
+        }
+        .comments {
+            .comments__title {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 20px;
+            }
+            .comments__list {
+                list-style-type: none;
+                li {
+                    margin-bottom: 23px;
+                }
+            }
+        }
+        .ruls {
+            display: flex;
+            justify-content: space-between;
+            .ruls__item h2 {
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .room-info__side {
+        display: flex;
+        justify-content: center;
+    }
+}

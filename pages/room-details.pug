@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Room Details
+    body
+        include ../components/header/header.pug 
+        +header('')
+        main 
+            .gallery
+                .gallery__main-img
+                    img(src=require('../assets/img/room-details_1.png').default)
+                .gallery__side-img
+                    img(src=require('../assets/img/room-details_2.png').default)
+                    img(src=require('../assets/img/room-details_3.png').default)
+            .container 
+                .room-info
+                    .room-info__main 
+                        .reviews 
+                            .room-info__item
+                                h2 Сведения о номере
+                                include ../components/icon-text-list/icon-text-list.pug
+                            .room-info__item 
+                                h2 Впечатления от номера
+                                .pie__container
+                                    img(src=require('../assets/img/Pie.svg').default)
+                                    ul.reviews__list 
+                                        li 
+                                            label
+                                                span.yellow
+                                                | Великолепно
+                                        li 
+                                            label
+                                                span.blue 
+                                                | Хорошо
+                                        li 
+                                            label
+                                                span.violet
+                                                | Удовлетворительно 
+                                        li 
+                                            label
+                                                span.black
+                                                | Разочарован
+                        .comments 
+                            .comments__title
+                                h2 Отзывы посетителей номера 
+                                span 2 отзыва
+                            ul.comments__list 
+                                li 
+                                    include ../components/comment/comment.pug 
+                                    +comment('Мурад Сарафанов', '5 дней назад', 'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.', 'comment-1')
+                                li 
+                                    +comment('Патрисия Стёклышкова', 'Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент', 'comment-1')
+                        .ruls 
+                            .ruls__item 
+                                h2 Правила
+                                include ../components/bullet-list/bullet-list.pug 
+                            .ruls__item 
+                                h2 Отмена 
+                                p Бесплатная отмена в течение 48 ч. После<br> этого при отмене не позднее чем за 5 дн. до <br> прибытия вы получите полный возврат за <br> вычетом сбора за услуги.
+                                
+                    .room-info__side 
+                        include ../components/booking-form/booking-form.pug
+        include ../components/footer/footer.pug
+
+
+
+

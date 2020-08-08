@@ -20,3 +20,5 @@ import '@components/expandable-checkbox-list/expandable-checkbox-list.js'
 import '@components/room-block/room-block.js'
 
 import '@components/footer/footer.js'
+
+import '@components/pagination/pagination.js'
