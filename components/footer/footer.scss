@@ -63,3 +63,30 @@ footer {
     }
 
 }
+
+@media screen and (max-width: 1199px) {
+    footer .footer-wrapper {
+        grid-template-columns: auto;
+        row-gap: 20px;
+        .footer-description {
+            grid-column: 1/3;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    footer .footer-wrapper .footer-description {
+        grid-column: 1/2;
+    }
+    .container {
+        width: 90%;
+    }
+
+    .footer-bottom .footer-wrapper {
+        flex-direction: column;
+        .footer-icons {
+            margin-top: 20px;
+        }
+    }
+}
+

@@ -206,3 +206,17 @@ header {
         }
     }
 }
+
+@media screen and (max-width: 420px) {
+    header .header-wrapper nav {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    header .header-wrapper .user-name { 
+        border: none;
+        padding: 0;
+    }
+    header .header-wrapper .header-entry {
+        margin-left: 0;
+    }
+}
