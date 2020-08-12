@@ -17,6 +17,25 @@ mixin header(name)
                         li
                             a(href="#") Соглашения
                             span expand_more
+                    .header-burger
+                        input(type="checkbox" id="burger")
+                        label(for="burger").burger
+                            span
+                        ul.burger-menu 
+                            label(for="burger").close
+                                span
+                            li 
+                                a(href="#") О нас 
+                            li
+                                a(href="#") Услуги
+                                span expand_more
+                            li 
+                                a(href="#") Вакансии
+                            li 
+                                a(href="#") Новости 
+                            li
+                                a(href="#") Соглашения
+                                span expand_more
                     if(name == '')
                         .header-entry
                             include ../buttons/button.pug
