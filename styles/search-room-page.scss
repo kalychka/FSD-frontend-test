@@ -5,6 +5,7 @@ main {
         display: grid;
         grid-template-columns: (100%/4) auto;
         column-gap: 60px;
+        max-width: 100%;
     }
     aside {
         display: flex;
@@ -20,6 +21,7 @@ main {
         }
     }
     .main-wrapper__content {
+        max-width: 100%;
         h1 {
             margin-bottom: 20px;
         }
@@ -46,6 +48,12 @@ main {
     width: 266px;
     .dropdown__list {
         width: 266px;
+    }
+}
+
+@media screen and (max-width: 1299px) {
+    .main-wrapper .main-wrapper__content {
+        
     }
 }
 

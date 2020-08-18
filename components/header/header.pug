@@ -21,24 +21,27 @@ mixin header(name)
                         input(type="checkbox" id="burger")
                         label(for="burger").burger
                             span
-                        ul.burger-menu 
-                            label(for="burger").close
-                                span
-                            li 
-                                a(href="#") О нас 
-                            li
-                                a(href="#") Услуги
-                                span expand_more
-                            li 
-                                a(href="#") Вакансии
-                            li 
-                                a(href="#") Новости 
-                            li
-                                a(href="#") Соглашения
-                                span expand_more
+                        .burger-wrapper
+                            ul.burger-menu 
+                                li 
+                                    a(href="#") О нас 
+                                li
+                                    a(href="#") Услуги
+                                    span expand_more
+                                li 
+                                    a(href="#") Вакансии
+                                li 
+                                    a(href="#") Новости 
+                                li
+                                    a(href="#") Соглашения
+                                    span expand_more
+                            .burger-buttons
+                                include ../buttons/button.pug
+                                +button('button-outline', 'Войти')
+                                +button('button', 'Зарегистрироваться')
                     if(name == '')
                         .header-entry
-                            include ../buttons/button.pug
+                            
                             +button('button-outline', 'Войти')
                             +button('button', 'Зарегистрироваться')
                     else 
