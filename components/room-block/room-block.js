@@ -9,6 +9,7 @@ $(document).ready(function(){
             nextArrow: '<div class="room-block__button nextArrow">expand_more</div>',
             dots: true,
             dotsClass: 'room-dots',
+            mobileFirst: true,
         });
     })
   });
