@@ -52,8 +52,6 @@ html(lang="en")
 							include ../components/subscriptions-text-field/subscriptions-text-field.pug
 				div.main__container
 					div.main__container__item.item__checkbox-buttons 
-						div.component-title 
-							h3 CheckBox Buttons
 						div.component-container
 							include ../components/checkbox-buttons/checkbox-buttons.pug
 					div.main__container__item.item__radio-buttons
@@ -83,11 +81,9 @@ html(lang="en")
 							+rate-buttons('5')
 				div.main__container 
 					div.main__container__item.item__range-slider
-						div.component-title
-							h3 Range slider
-							input(type="text" id="amount" readonly)
 						div.component-container 
 							include ../components/slider-range/slider-range.pug
+							+range-slider('Range slider', '')
 					div.main__container__item.item__buttons 
 						div.component-title 
 							h3 Buttons 
@@ -153,12 +149,15 @@ html(lang="en")
 							include ../components/rich-checkbox/rich-checkbox.pug
 				div.main__container 
 					div.main__container__item 
+						div.component-title 
+							h3 Bullet list
 						div.component-container 
 							include ../components/bullet-list/bullet-list.pug
 				div.main__container 
 					div.main__container__item 
 						div.component-container 
 							include ../components/icon-text-list/icon-text-list.pug 
+							+icon-text-list('')
 				div.main__container 
 					div.main__container__item 
 						div.component-container 
