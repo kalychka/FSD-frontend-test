@@ -1,5 +1,6 @@
 main {
-    height: 100vh;
+    height: 800px;
+    box-sizing: border-box;
     padding: 70px 0 18px 0;
     background-image: url('../assets/img/landing-bg.png');
     background-repeat: no-repeat;
@@ -7,14 +8,33 @@ main {
     background-size: cover;
 }
 
+.image-wrapper {
+    display: none;
+    position: relative;
+    margin-bottom: 20px;
+    img {
+        width: 100%;
+        height: auto;
+        
+    }
+}
+
 .wrapper {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100%;
+    height: 700px;
     .main__subtitle {
         text-align: right;
+        
     }
+}
+
+.subtitle-mobile {
+    display: none;
+    position: absolute;
+    top: 75%;
+    right: 10px;
 }
 
 @media screen and (max-width: 768px) {
@@ -26,5 +46,19 @@ main {
 @media screen and (max-width: 420px) {
     .wrapper .search-window .search-room {
         width: 100%;
+    }
+    main {
+        height: 700px;
+        background-image: none;
+        padding-top: 0;
+        .main__subtitle {
+            display: none;
+        }
+    }
+    .image-wrapper {
+        display: block;
+        .subtitle-mobile {
+            display: block;
+        }
     }
 }

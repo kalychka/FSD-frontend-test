@@ -7,3 +7,20 @@
     background-position: center;
     background-size: cover;
 }
+
+.image-wrapper {
+    display: none;
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .image-wrapper {
+        display: block;
+    }
+    .main-wrapper {
+        background-image: none;
+    }
+}

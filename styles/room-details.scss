@@ -31,8 +31,7 @@ main {
 }
 
 .room-info {
-    display: grid;
-    grid-template-columns: 60% 40%;
+    display: flex;
     column-gap: 70px;
     .room-info__main {
         display: grid;
@@ -78,6 +77,7 @@ main {
                 .black {
                     background: linear-gradient(180deg, #919191 0%, #3D4975 100%);
                 }
+
             }
         }
         .comments {
@@ -104,5 +104,45 @@ main {
     .room-info__side {
         display: flex;
         justify-content: center;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .reviews {
+        flex-direction: column;
+        .icon-text-list_cozy {
+            max-width: 250px;
+        }
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .room-info {
+        flex-direction: column-reverse;
+        row-gap: 70px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .ruls {
+        flex-direction: column;
+    }
+    .gallery {
+        flex-direction: column;
+        .gallery__main-img {
+            width: 100%;
+        }
+        .gallery__side-img {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .comments {
+        padding-right: 60px;
+    }
+    .ruls {
+        padding-right: 60px;
     }
 }
