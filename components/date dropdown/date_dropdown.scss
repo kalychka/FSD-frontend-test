@@ -1,8 +1,14 @@
 .date-dropdown__container {
     display: flex;
+    width: 320px;
+    justify-content: space-between;
     .date-dropdown__from {
         margin-right: 20px;
     };
+    .date-dropdown__from,
+    .date-dropdown__to {
+        width: 100%;
+    }
     .date-dropdown__from h3,
     .date-dropdown__to h3 {
         margin-bottom: 5px;
@@ -12,12 +18,13 @@
 .date-dropdown__form {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     box-sizing: border-box;
-    width: 150px;
     height: 44px;
     background-color: white;
     border: 1px solid rgba(31, 32, 65, 0.25);
     border-radius: 4px;
+    cursor: pointer;
     input {
         color: rgba(31, 32, 65, 0.75);
         font-weight: normal;
@@ -25,13 +32,14 @@
         line-height: 1.5rem;
         background-color: white;
         border: none;
-        width: 103px;
+        width: 80%;
         height: 24px;
         float: left;
         outline: none;
         box-sizing: border-box;
         padding-left: 15px;
         line-height: 18px;
+        cursor: pointer;
     }
     span {
         display: flex;

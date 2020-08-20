@@ -8,15 +8,19 @@ main {
     background-size: cover;
 }
 
+.landing-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
 .image-wrapper {
     display: none;
     position: relative;
-    margin-bottom: 20px;
-    img {
-        width: 100%;
-        height: auto;
-        
-    }
+    width: 100%;
+    height: 250px;
+    background-image: url(../assets/img/landing-bg.png);
+    background-position: center;
+    background-size: cover;
 }
 
 .wrapper {
@@ -31,10 +35,9 @@ main {
 }
 
 .subtitle-mobile {
-    display: none;
     position: absolute;
-    top: 75%;
-    right: 10px;
+    bottom: 0;
+    left: 15%;
 }
 
 @media screen and (max-width: 768px) {
@@ -43,9 +46,35 @@ main {
     }
 }
 
-@media screen and (max-width: 420px) {
-    .wrapper .search-window .search-room {
+@media screen and (max-width: 380px) {
+
+    .landing-container {
         width: 100%;
+    }
+
+    .wrapper .search-window  {
+        width: 100%;
+        .dropdown {
+            width: 100%;
+        }
+
+        .date-dropdown__container {
+            width: 100%;
+            .date-dropdown__from {
+                margin-right: 5px;
+            }
+
+        }
+
+        .button-pay {
+            width: auto;
+        }
+    }
+
+    .wrapper .search-window .search-room {
+        max-width: 100%;
+        padding-left: 5px;
+        padding-right: 5px;
     }
     main {
         height: 700px;
@@ -57,8 +86,6 @@ main {
     }
     .image-wrapper {
         display: block;
-        .subtitle-mobile {
-            display: block;
-        }
     }
+
 }
