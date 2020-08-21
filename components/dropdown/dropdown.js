@@ -11,6 +11,7 @@ $( function() {
         $(this).find('.dropdown__form').click(function() {
             // открытие-закрытие формы
             $(this).parent().find('.dropdown__list').slideToggle();
+            
         })
 
         // событие клика по кнопке "плюс"
