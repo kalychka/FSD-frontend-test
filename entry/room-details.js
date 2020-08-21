@@ -13,3 +13,13 @@ import '@components/booking-form/booking-form.js'
 import '@components/bullet-list/bullet-list.js'
 
 import '@components/footer/footer.js'
+
+$(document).ready(function() {
+    $('.gallery-mobile').slick({
+        dots: false,
+        arrows: false,
+        mobileFirst: true,
+        autoplay: true,
+        
+    })
+})
