@@ -3,6 +3,7 @@ html(lang="en")
     head
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon.png">
         title Search Room
     body
         include ../components/header/header.pug 
@@ -10,28 +11,33 @@ html(lang="en")
         main
             .container 
                 .main-wrapper
-                    aside 
-                        .filter-item 
-                            h3 Даты пребывания в отеле
-                            include ../components/filter-date/filter-dropdown.pug
-                        .filter-item 
-                            h3 Гости 
-                            include ../components/dropdown/dropdown.pug
-                            +Dropdown('Сколько гостей?', '', 'Взрослые', 'Дети', 'Младенцы')
-                        .filter-item 
-                            include ../components/slider-range/slider-range.pug
-                            +range-slider('Диапазон цены', 'Стоимость за сутки пребывания в номере')
-                        .filter-item 
-                            include ../components/checkbox-buttons/checkbox-buttons.pug
-                        .filter-item 
-                            h3 Доступность
-                            include ../components/rich-checkbox/rich-checkbox.pug
-                        .filter-item 
-                            h3 Удобства номера 
-                            +Dropdown('Сколько Комнат?', '_bedroom', 'Спальни', 'Кровати', 'Ванные комнаты')
-                        .filter-item 
-                            include ../components/expandable-checkbox-list/expandable-checkbox-list.pug
-                            +expandable-checkbox-list('Дополнительные удобства')
+                    .expand-option
+                        input(type="checkbox" id="options")
+                        label(for="options").expand-options__label
+                            h2 Опции
+                            span.expand-arrow expand_more
+                        aside 
+                            .filter-item 
+                                h3 Даты пребывания в отеле
+                                include ../components/filter-date/filter-dropdown.pug
+                            .filter-item 
+                                h3 Гости 
+                                include ../components/dropdown/dropdown.pug
+                                +Dropdown('Сколько гостей?', '', 'Взрослые', 'Дети', 'Младенцы')
+                            .filter-item 
+                                include ../components/slider-range/slider-range.pug
+                                +range-slider('Диапазон цены', 'Стоимость за сутки пребывания в номере')
+                            .filter-item 
+                                include ../components/checkbox-buttons/checkbox-buttons.pug
+                            .filter-item 
+                                h3 Доступность
+                                include ../components/rich-checkbox/rich-checkbox.pug
+                            .filter-item 
+                                h3 Удобства номера 
+                                +Dropdown('Сколько Комнат?', '_bedroom', 'Спальни', 'Кровати', 'Ванные комнаты')
+                            .filter-item 
+                                include ../components/expandable-checkbox-list/expandable-checkbox-list.pug
+                                +expandable-checkbox-list('Дополнительные удобства')
                     .main-wrapper__content 
                         h1 Номера, которые мы для вас подобрали
                         .layout   
